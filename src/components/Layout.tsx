@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { asset } from '../lib/asset';
 import { NavLink, Outlet, useLocation } from 'react-router-dom';
 
 export const NAV = [
@@ -23,7 +24,7 @@ export default function Layout() {
       <header className="sticky top-0 z-40 border-b border-border-default bg-white/90 backdrop-blur">
         <div className="container-page flex h-14 items-center justify-between gap-4 lg:h-16">
           <NavLink to="/" className="flex items-center gap-2 whitespace-nowrap">
-            <img src="/assets/intro/ai-sparkle.png" alt="" className="size-6 object-contain" />
+            <img src={asset('assets/intro/ai-sparkle.png')} alt="" className="size-6 object-contain" />
             <span className="text-[15px] font-bold tracking-[-0.2px] text-text-primary">디자인팀 AI 활용 공유보드</span>
           </NavLink>
           <nav className="hidden items-center gap-1 lg:flex" aria-label="페이지">

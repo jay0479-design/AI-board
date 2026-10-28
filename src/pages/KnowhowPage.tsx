@@ -1,4 +1,5 @@
 import { AiTag } from '../components/Tag';
+import { asset } from '../lib/asset';
 import { AuthorSection } from '../components/Sections';
 
 /* Figma: 페이지 "📍 3. 우리팀 실무 노하우" › The Showcase (62:16, 1280×908) */
@@ -32,9 +33,9 @@ export default function KnowhowPage() {
         style={{ backgroundImage: 'linear-gradient(144.65deg, #f6f5ff 0%, #fff9f1 71.429%)' }}
       >
         {/* Blobs (blurred circles) */}
-        <img src="/assets/knowhow/blob-3.svg" alt="" className="pointer-events-none absolute -left-[300px] -top-[240px] w-[640px] max-w-none" />
-        <img src="/assets/knowhow/blob-2.svg" alt="" className="pointer-events-none absolute -top-[280px] right-[-120px] w-[700px] max-w-none" />
-        <img src="/assets/knowhow/blob-1.svg" alt="" className="pointer-events-none absolute left-[30%] top-0 w-[620px] max-w-none" />
+        <img src={asset('assets/knowhow/blob-3.svg')} alt="" className="pointer-events-none absolute -left-[300px] -top-[240px] w-[640px] max-w-none" />
+        <img src={asset('assets/knowhow/blob-2.svg')} alt="" className="pointer-events-none absolute -top-[280px] right-[-120px] w-[700px] max-w-none" />
+        <img src={asset('assets/knowhow/blob-1.svg')} alt="" className="pointer-events-none absolute left-[30%] top-0 w-[620px] max-w-none" />
 
         <div className="relative flex flex-col gap-10">
           <header className="flex flex-col gap-3">
@@ -61,8 +62,8 @@ export default function KnowhowPage() {
               }
               media={
                 <div className="relative size-full">
-                  <img src="/assets/knowhow/notebooklm-1.png" alt="NotebookLM 노트북 목록 화면" className="absolute left-0 top-0 h-full w-[58%] object-cover object-left-top" />
-                  <img src="/assets/knowhow/notebooklm-2.png" alt="노트북 선택 메뉴" className="absolute right-0 top-0 h-full w-1/2 object-cover object-left-top" />
+                  <img src={asset('assets/knowhow/notebooklm-1.png')} alt="NotebookLM 노트북 목록 화면" className="absolute left-0 top-0 h-full w-[58%] object-cover object-left-top" />
+                  <img src={asset('assets/knowhow/notebooklm-2.png')} alt="노트북 선택 메뉴" className="absolute right-0 top-0 h-full w-1/2 object-cover object-left-top" />
                   <div className="absolute right-[-3%] top-[39%] h-[20%] w-[51%] rounded-[8px] border-[3px] border-[red]" aria-hidden />
                 </div>
               }

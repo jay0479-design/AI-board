@@ -1,4 +1,5 @@
 import { Callout, CodeBox, PageHeader } from '../components/Primitives';
+import { asset } from '../lib/asset';
 import { fill, type PromptLine } from '../components/PromptPanel';
 import { AuthorSection, GuideSection, PromptToggle } from '../components/Sections';
 import { AiTag, StatusTag } from '../components/Tag';
@@ -213,7 +214,7 @@ export default function InsightsPage() {
               <ResearchCard
                 author="정현영"
                 date="2026.09.02"
-                avatar="/assets/insights/avatar-jhy.svg"
+                avatar={asset('assets/insights/avatar-jhy.svg')}
                 topic="클로드 스킬을 공유드립니다."
                 body="Claude의 AI스러운 UX를 자연스럽게 변형해주는 스킬"
                 links={[
@@ -234,12 +235,12 @@ export default function InsightsPage() {
                   media={
                     <div className="flex size-full items-center justify-between gap-3 p-[3.5%]">
                       <div className="flex h-full w-[51.6%] flex-col items-center gap-[3%] bg-white">
-                        <img src="/assets/insights/im-not-ai-1.png" alt="im-not-ai 스킬 소개" className="w-full object-cover" style={{ aspectRatio: '984/570' }} />
-                        <img src="/assets/insights/im-not-ai-2.png" alt="" className="w-[76%] object-cover object-left" style={{ aspectRatio: '251/49' }} />
-                        <img src="/assets/insights/im-not-ai-3.png" alt="" className="w-[76%] object-cover object-top" style={{ aspectRatio: '251/84' }} />
+                        <img src={asset('assets/insights/im-not-ai-1.png')} alt="im-not-ai 스킬 소개" className="w-full object-cover" style={{ aspectRatio: '984/570' }} />
+                        <img src={asset('assets/insights/im-not-ai-2.png')} alt="" className="w-[76%] object-cover object-left" style={{ aspectRatio: '251/49' }} />
+                        <img src={asset('assets/insights/im-not-ai-3.png')} alt="" className="w-[76%] object-cover object-top" style={{ aspectRatio: '251/84' }} />
                       </div>
                       <div className="h-full w-[46%] overflow-hidden">
-                        <img src="/assets/insights/im-not-ai-4.png" alt="클로드 스킬 공유 노션 페이지" className="size-full object-cover object-left-top" />
+                        <img src={asset('assets/insights/im-not-ai-4.png')} alt="클로드 스킬 공유 노션 페이지" className="size-full object-cover object-left-top" />
                       </div>
                     </div>
                   }

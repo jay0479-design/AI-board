@@ -1,5 +1,6 @@
 import type { ReactNode } from 'react';
 import { Badge, type BadgeTone } from './Tag';
+import { asset } from '../lib/asset';
 
 /** Section header row: badge + bold name + gray description */
 export function SectionHeader({ badge, tone, name, desc }: { badge?: string; tone?: BadgeTone; name?: ReactNode; desc?: ReactNode }) {
@@ -67,7 +68,7 @@ export function ImageSlot({ src, alt = '', label, ratio = '16/9', className = ''
     <div className={`flex min-w-0 flex-1 flex-col gap-2 ${className}`}>
       {label && <p className="t-body-md text-text-secondary">{label}</p>}
       <div className="w-full overflow-hidden rounded-[20px] bg-surface-divider" style={{ aspectRatio: ratio }}>
-        {src ? <img src={src} alt={alt} className={`size-full ${fit === 'cover' ? 'object-cover' : 'object-contain'}`} loading="lazy" /> : null}
+        {src ? <img src={asset(src)} alt={alt} className={`size-full ${fit === 'cover' ? 'object-cover' : 'object-contain'}`} loading="lazy" /> : null}
       </div>
     </div>
   );

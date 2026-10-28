@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { asset } from '../lib/asset';
 import { Divider } from '../components/Primitives';
 import { NumberBadge } from '../components/Tag';
 
@@ -59,8 +60,8 @@ export default function HomePage() {
         {/* 팀 일러스트 (Figma 249:1855, 283:11) — 설명 콜아웃(250:92)은 요청으로 제외 */}
         <div className="mt-5 flex justify-center lg:justify-end">
           <div className="relative w-[226px] shrink-0 lg:-mt-24">
-            <img src="/assets/intro/team-illustration.png" alt="디자인팀 캐릭터 일러스트" className="w-full" />
-            <img src="/assets/intro/ai-sparkle.png" alt="" className="absolute -right-2 -top-10 w-[54px] rotate-[8deg]" />
+            <img src={asset('assets/intro/team-illustration.png')} alt="디자인팀 캐릭터 일러스트" className="w-full" />
+            <img src={asset('assets/intro/ai-sparkle.png')} alt="" className="absolute -right-2 -top-10 w-[54px] rotate-[8deg]" />
           </div>
         </div>
 
@@ -68,8 +69,8 @@ export default function HomePage() {
         <div className="card mt-8 overflow-hidden rounded-[20px] p-0 lg:mt-4">
           <video
             className="aspect-video w-full bg-black"
-            src="/assets/intro/intro-video.mp4"
-            poster="/assets/intro/intro-video-poster.jpg"
+            src={asset('assets/intro/intro-video.mp4')}
+            poster={asset('assets/intro/intro-video-poster.jpg')}
             autoPlay
             muted
             loop
