@@ -13,8 +13,8 @@
 | 이름 | 디자인팀 AI 활용 공유보드 (GC메디아이 디자인팀) |
 | 무엇 | Figma 보드 「AI 활용 공유 보드」를 그대로 옮긴 반응형 웹사이트 |
 | 원본 Figma | 파일 키 `egZ9c39su3qGZLQjMvKM33` (보드 본체) · 발표 장표 `TX22qnJGWHuaOKsPiNfepj` |
-| 배포 주소 | https://jay0479-design.github.io/helloworld/ (GitHub Pages, master 푸시 시 자동 배포) |
-| 저장소 | https://github.com/jay0479-design/helloworld (public) |
+| 배포 주소 | https://jay0479-design.github.io/AI-board/ (GitHub Pages, master 푸시 시 자동 배포) |
+| 저장소 | https://github.com/jay0479-design/AI-board (public) |
 | 스택 | Vite 5 · React 18 · TypeScript(strict) · react-router-dom 6 · Tailwind CSS v4 |
 | 서체 | Pretendard (CDN) |
 | 상태 | 제작 중(미완성) 버전을 내용 확인용으로 배포한 상태 |
@@ -24,8 +24,8 @@
 ## 2. 새 PC에서 시작하기
 
 ```bash
-git clone https://github.com/jay0479-design/helloworld.git
-cd helloworld
+git clone https://github.com/jay0479-design/AI-board.git
+cd AI-board
 npm install
 npm run dev        # http://localhost:5173  (같은 Wi-Fi 기기에서는 터미널의 Network 주소)
 ```
@@ -42,7 +42,7 @@ npm run dev        # http://localhost:5173  (같은 Wi-Fi 기기에서는 터미
 | `npm run build` | `tsc -b` 타입체크 + `vite build` + `dist/404.html` 복사(SPA 새로고침 대응) |
 | `npm run preview` | 빌드 결과 미리보기 |
 | `npm run typecheck` | 타입만 검사 |
-| `MSYS_NO_PATHCONV=1 VITE_BASE=/helloworld/ npm run build` | 배포와 같은 하위 경로로 빌드 (Git Bash) |
+| `MSYS_NO_PATHCONV=1 VITE_BASE=/AI-board/ npm run build` | 배포와 같은 하위 경로로 빌드 (Git Bash) |
 
 ---
 
@@ -90,7 +90,7 @@ public/
   assets/intro/            # intro-video.mp4 (H.264 1280×720 무음) + 포스터
 docs/mobile-qr.png         # 로컬 Network 주소 QR (PC IP 바뀌면 재생성)
 docs/site-qr.png           # 배포 주소 QR
-.github/workflows/deploy.yml  # master 푸시 → 빌드(VITE_BASE=/helloworld/) → GitHub Pages
+.github/workflows/deploy.yml  # master 푸시 → 빌드(VITE_BASE=/AI-board/) → GitHub Pages
 .claude/launch.json        # 미리보기 서버 설정 (web / preview-pages)
 ```
 
@@ -177,7 +177,7 @@ Figma MCP가 연결돼 있으면: `create_session(fileKey)` → `get_design_cont
 
 ## 6. 코드 규칙
 
-- 정적 파일 경로는 반드시 `asset('assets/…')`로 감쌉니다. `/assets/…`를 직접 쓰면 GitHub Pages(하위 경로 `/helloworld/`)에서 깨집니다.
+- 정적 파일 경로는 반드시 `asset('assets/…')`로 감쌉니다. `/assets/…`를 직접 쓰면 GitHub Pages(하위 경로 `/AI-board/`)에서 깨집니다.
 - 라우터 링크는 `<Link to="/process">`처럼 루트 기준으로 쓰고, `basename`이 알아서 붙습니다.
 - 색·라운드·그림자는 `src/index.css`의 `@theme` 토큰(`text-text-primary`, `bg-surface-card`, `rounded-card` 등)을 사용. 새 색이 필요하면 토큰을 추가하고 Figma 변수명과 맞춥니다.
 - 전역 `a { color: inherit }` 같은 기본 스타일은 반드시 `@layer base` 안에 (밖에 두면 Tailwind 유틸리티를 덮어써 글자가 사라진 적 있음).
@@ -190,18 +190,18 @@ Figma MCP가 연결돼 있으면: `create_session(fileKey)` → `get_design_cont
 
 ## 7. 배포
 
-- `master`에 푸시 → `.github/workflows/deploy.yml` 실행 → 약 1~2분 뒤 https://jay0479-design.github.io/helloworld/ 갱신.
-- 워크플로가 `VITE_BASE=/helloworld/`를 넣어 빌드합니다. **저장소 이름을 바꾸면 이 값도 바꿔야 합니다.**
+- `master`에 푸시 → `.github/workflows/deploy.yml` 실행 → 약 1~2분 뒤 https://jay0479-design.github.io/AI-board/ 갱신.
+- 워크플로가 `VITE_BASE=/AI-board/`를 넣어 빌드합니다. **저장소 이름을 바꾸면 이 값도 바꿔야 합니다.**
 - 빌드 후 `dist/index.html`을 `dist/404.html`로 복사해 새로고침·딥링크가 동작합니다.
-- 배포 결과를 로컬에서 미리 보려면 하위 경로 빌드 후 `.claude/launch.json`의 **preview-pages** (http://localhost:4173/helloworld/).
+- 배포 결과를 로컬에서 미리 보려면 하위 경로 빌드 후 `.claude/launch.json`의 **preview-pages** (http://localhost:4173/AI-board/).
 - 저장소가 public이라 링크를 아는 누구나 볼 수 있습니다.
-- QR 재생성: `node -e "require('qrcode').toFile('docs/site-qr.png','https://jay0479-design.github.io/helloworld/',{width:360,margin:2})"`
+- QR 재생성: `node -e "require('qrcode').toFile('docs/site-qr.png','https://jay0479-design.github.io/AI-board/',{width:360,margin:2})"`
 
 ---
 
 ## 8. 환경별 주의사항 (Windows에서 겪은 것)
 
-- Git Bash에서 `VITE_BASE=/helloworld/`가 `C:/Program Files/Git/helloworld/`로 바뀜 → 앞에 `MSYS_NO_PATHCONV=1`.
+- Git Bash에서 `VITE_BASE=/AI-board/`가 `C:/Program Files/Git/AI-board/`로 바뀜 → 앞에 `MSYS_NO_PATHCONV=1`.
 - `python`은 Microsoft Store 스텁이라 안 됨 → 스크립트는 `node -e` 사용.
 - `curl`이 exit 35(schannel 인증서 폐기 확인 실패) → `curl --ssl-no-revoke` 또는 PowerShell `Invoke-WebRequest`.
 - 한글 경로·따옴표가 들어간 bash heredoc은 파싱 실패할 수 있음 → 파일 작성은 에디터/Write 도구로.

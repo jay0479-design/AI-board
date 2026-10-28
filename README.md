@@ -25,11 +25,11 @@ node -e "require('qrcode').toFile('docs/mobile-qr.png','http://<PC IP>:5173/',{w
 
 ## 배포 (GitHub Pages)
 
-`master`에 푸시하면 `.github/workflows/deploy.yml`이 자동으로 빌드해 GitHub Pages에 배포합니다. 주소: https://jay0479-design.github.io/helloworld/
+`master`에 푸시하면 `.github/workflows/deploy.yml`이 자동으로 빌드해 GitHub Pages에 배포합니다. 주소: https://jay0479-design.github.io/AI-board/
 
-- 하위 경로 배포라 빌드 시 `VITE_BASE=/helloworld/`를 넣습니다(워크플로에 설정됨). 코드에서는 정적 파일 경로를 `asset()`(`src/lib/asset.ts`)로 감싸고, 라우터 `basename`은 `import.meta.env.BASE_URL`입니다.
+- 하위 경로 배포라 빌드 시 `VITE_BASE=/AI-board/`를 넣습니다(워크플로에 설정됨). 코드에서는 정적 파일 경로를 `asset()`(`src/lib/asset.ts`)로 감싸고, 라우터 `basename`은 `import.meta.env.BASE_URL`입니다.
 - 새로고침·딥링크를 위해 빌드 후 `dist/index.html`을 `dist/404.html`로 복사합니다.
-- 로컬에서 배포 결과를 미리 보려면: `MSYS_NO_PATHCONV=1 VITE_BASE=/helloworld/ npm run build` 후 `npx vite preview` → http://localhost:4173/helloworld/
+- 로컬에서 배포 결과를 미리 보려면: `MSYS_NO_PATHCONV=1 VITE_BASE=/AI-board/ npm run build` 후 `npx vite preview` → http://localhost:4173/AI-board/
 - 저장소가 공개(public)이므로 배포된 사이트는 링크를 아는 누구나 볼 수 있습니다.
 
 ## 라우트 ↔ Figma 페이지

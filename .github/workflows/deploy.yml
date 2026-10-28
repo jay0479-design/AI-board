@@ -27,7 +27,7 @@ jobs:
       - run: npm run build
         env:
           # 저장소 이름이 바뀌면 이 값도 바꿔야 합니다 (https://<owner>.github.io/<repo>/)
-          VITE_BASE: /helloworld/
+          VITE_BASE: /AI-board/
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist

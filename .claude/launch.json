@@ -30,7 +30,7 @@
         "4173",
         "--strictPort",
         "--base",
-        "/helloworld/"
+        "/AI-board/"
       ],
       "port": 4173
     }
