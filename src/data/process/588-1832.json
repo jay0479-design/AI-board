@@ -1,0 +1,51 @@
+{
+  "nodeId": "588:1832",
+  "author": "이미애",
+  "group": "Group · ③ 브랜딩·이미지·인쇄",
+  "order": 7,
+  "template": "skill-prompt-guide",
+  "title": "GC메디아이 홈페이지 — Gemini로 메인 컨셉·브랜딩 컬러 시안 → 메인 디자인",
+  "subtitle": "GC메디아이 회사 홈페이지 · 웹사이트 개편 · 2026.03–04 · 컨셉·컬러 시안",
+  "aiTags": ["Gemini"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "컨셉 · 브랜딩 컬러 시안",
+      "desc": "보고용 메인 컨셉·브랜딩 컬러 후보 탐색",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "메인 컨셉 디자인",
+      "desc": "확정 방향으로 홈페이지 메인 디자인",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요.",
+      "images": [
+        { "label": "Before — 컬러·컨셉 후보", "src": "" },
+        { "label": "After — 홈페이지 메인 시안", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 브랜딩 컬러 시안 보고 → 홈페이지 메인 컨셉 및 디자인 완료.\n팁: 확인 필요"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "nodeId": "446:1214",
+  "author": "정현영",
+  "order": 1,
+  "template": "skill-prompt-guide",
+  "title": "사명 변경 안내 팝업 · 첫 HTML 직접 전달 사례",
+  "subtitle": "Claude Code로 팝업 HTML 2종(제약·병원) 제작 → 개발 리소스 없이 디자이너가 직접 전달·배포 (약국은 이미지)",
+  "aiTags": ["Claude Code"],
+  "docTags": ["📎 HTML"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "공통 프롬프트 1회 작성",
+      "desc": "구조·디자인 토큰·레이아웃·기능을 한 번에 지정 (단일 HTML 파일)",
+      "promptLabel": "공통 프롬프트 (요약 · 전문은 노션)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://app.notion.com/p/36ee60cf04cc80c1ba84ce0418490754" },
+      "prompt": "사명 변경 안내 공지 팝업 HTML을 만들어주세요.\n[구조] 단일 HTML 파일(CSS·JS 포함) · 모달 팝업, 모바일은 하단 시트 · 폰트 Spoqa Han Sans Neo\n[토큰] Primary #1B5EED · 너비 600px(태블릿 440 / 모바일 100%) · 모서리 14px · 제목 21px·본문 15px\n[레이아웃] 공지 태그+제목 → 인사말 → 섹션 테이블 → 유비케어→지씨메디아이 화살표 → 문의 박스 → 확인 버튼\n[기능] 로드 시 자동 열림 · 확인/오버레이/ESC 닫기 · 하루 보지 않기 쿠키 1일 · role=\"dialog\""
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "버전별 콘텐츠 교체 · 전달",
+      "desc": "같은 토큰에 콘텐츠 블록만 바꿔 2종 생성 → HTML 파일로 사업부 전달·배포",
+      "promptLabel": "버전 블록 + 전달 (제약 = 간소형 / 의사랑 = 상세형)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://app.notion.com/p/36ee60cf04cc80c1ba84ce0418490754" },
+      "prompt": "위 공통 프롬프트에 아래 콘텐츠 블록만 추가합니다.\n[제약사 · 간소형 2섹션] 개정 안내 제목 · 개정 내용 테이블(사명 변경 / 적용 대상 / 적용 일자 3.25) · 이의 제기 안내\n[의사랑 · 상세형 4섹션] 변경 사유·대상 → 변경 내용(회사명 표기만 변경) → 시행일 3.25 → 문의처 · 여백 컴팩트\n완성된 HTML 파일을 사업부에 전달. 약국은 기술 환경이 달라 이미지로 별도 제작.",
+      "images": [
+        { "label": "팝업 이미지 첨부", "src": "/assets/process/446-1214/1.png", "alt": "사명 변경에 따른 이용약관 및 개인정보처리방침 개정 안내 팝업 (의사랑)" },
+        { "label": "팝업 이미지 첨부", "src": "/assets/process/446-1214/2.png", "alt": "사명 변경에 따른 이용약관 및 개인정보처리방침 개정 안내 팝업 (약국)" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 팝업 HTML 2건(제약·병원) + 약국용 이미지 1건. 디자인 → HTML → 배포를 디자이너가 원스톱, 개발 리소스 0.\n팁: ① 공통 프롬프트는 한 번만 쓰고 콘텐츠 블록만 바꾼다. 버전이 늘어도 토큰이 흔들리지 않는다.\n② 단일 HTML 파일(CSS·JS 포함)로 요청해야 받는 쪽이 그대로 올릴 수 있다.\n③ 전달 환경이 다르면 포맷을 바꾼다(약국은 이미지). ④ 닫기 조건·쿠키·접근성까지 프롬프트에 적는다."
+        }
+      ]
+    }
+  ]
+}

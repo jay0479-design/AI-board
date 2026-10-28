@@ -1,0 +1,50 @@
+{
+  "nodeId": "479:124",
+  "author": "이주희",
+  "order": 2,
+  "template": "skill-prompt-guide",
+  "title": "의사랑 전시 부스 라이트 버전 — 다크 부스와 톤 맞춤 수정 + 배경 대안 2종",
+  "subtitle": "의사랑 · 유지보수&프로모션 · 2026.05 · 피드백 메일 그대로 붙여넣기",
+  "aiTags": ["Claude"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "피드백 반영 수정",
+      "desc": "배경 톤·직각 박스·폰트 색 3가지",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "우측 다크모드 부스를 먼저 디자인하고 이미지상 좌측에 밝은톤 부스를 추가로 디자인 했는데 아래와 같이 회신이 왔어. 수정 좀 해봐.\n■ 수정 요청 사항 1. 배경 - 밝은 톤은 유지하되 기존 부스와 톤앤톤이 맞도록 흰색 대비 약간 어둡게 / 디자인은 기존 부스와 동일하게 2. 레이아웃 - 박스를 각진 형태(모서리 없는 직각)로 3. 폰트 색상 - 기존 부스 색상 기준으로 맞춰주세요"
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "배경 대안 탐색",
+      "desc": "라벤더 외 방향 2종",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "라벤더·퍼플 방향 제외 요청 → Warm Ivory(#F2EEE6) / Cool Mist Gray(#E4E7EC) 2안 제시",
+      "images": [
+        { "label": "Before — 1차 라이트 부스", "src": "" },
+        { "label": "After — 수정본 + 대안 2종", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 다크 부스(#1F1654) 기준으로 톤 맞춘 라이트 부스 수정본 1 + 배경 대안 2 — 당일 회신 가능.\n팁: 클라이언트 피드백 메일을 편집 없이 통째로 붙이는 게 가장 정확함 — 번호 항목 그대로 체크리스트가 됨. \"기존 디자인 기준으로\"는 기존 파일 색값(hex)을 같이 줘야 추측이 안 생김."
+        }
+      ]
+    }
+  ]
+}

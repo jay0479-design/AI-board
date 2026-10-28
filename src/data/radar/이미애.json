@@ -1,0 +1,733 @@
+{
+  "nodeId": "520:127",
+  "author": "이미애",
+  "title": "프로젝트별 AI 스택 레이더",
+  "subtitle": "각 프로젝트가 어떤 AI 스택으로 배포까지 진행되는지 한눈에 보는 현황판 프로젝트별 어떻게 어떤 AI를 사용하는지 공유해요",
+  "columns": [
+    "연도",
+    "월",
+    "담당자",
+    "프로젝트명",
+    "현재 단계",
+    "활용 중인 AI 스킬"
+  ],
+  "rows": [
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "1월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[의사랑 CRM] 다크모드·디자인 QC"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "1월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[KIMES] 부스 슬로건·배너 시안"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "1월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[의사랑] 서비스 챗봇 로고·아이콘·툴바"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "2월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[의사랑 CRM] 디자인 고도화 + IR 프로토타입"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "3월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[의사랑 CRM] UI 일관성 정렬 55P"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Figma AI",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "3월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[사내 홈페이지] 메인 컨셉·브랜딩 컬러 시안"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "4월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[의사랑 CRM] 디자인 시스템 MD화 + React 구현"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            },
+            {
+              "label": "Manus",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "4월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[온라인 서비스센터] 컨셉 정의서·IA 기획"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "5월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[클라우드DB백업] 에이전트 화면 + DS 9종"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            },
+            {
+              "label": "Manus",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "5월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[클라우드DB백업] WPF XAML 프론트 구현"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "5월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[의사랑 CRM] 워크플로우용 MD 제작 + QC 반영"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[도수치료 관리급여] 초안 화면 디자인"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[클라우드DB백업] 모달 UI XAML + 실행 아이콘"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[온라인 서비스센터] 메인 UX 2타입 + 검색 화면"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            },
+            {
+              "label": "Manus",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "7월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[팀] CRM 세미나 발표 자료"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "7월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[BX,BI] 컨셉·로고·심볼 시안 + 하위 메뉴 가이드"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            },
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "8월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[온라인 서비스센터] 기능정의서·화면정의서 구축"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[클라우드DB백업] 유효전환 팝업 HTML + 브로슈어"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[온라인 서비스센터] 홈카드 AI 프롬프트 도구"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "10월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[팀] GTI 협업 가이드 + IDP 적용 사례"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footnote": "2026 이미애"
+}

@@ -1,0 +1,47 @@
+{
+  "nodeId": "420:268",
+  "author": "정현영",
+  "order": 5,
+  "template": "skill-prompt-guide",
+  "title": "CLAUDE.md 디자인 자동화 프로세스 (지침 종합 → 작성 → GitHub 배포)",
+  "subtitle": "프로젝트 지침 문서(.md) 4종 종합 → Claude Code CLI 절대 규범 CLAUDE.md 작성 → GitHub 공유 → 팀원 공유",
+  "aiTags": ["Claude Code", "Figma MCP"],
+  "docTags": ["📎 GitHub"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "지침 종합 & CLAUDE.md 작성",
+      "desc": "지침 문서(.md) 4종 → 9개 섹션 절대 규범 (Figma가 기준)",
+      "promptLabel": "CLAUDE.md 생성 프롬프트",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://app.notion.com/p/GC-3cde60cf04cc809ab662e9115f30ce87?source=copy_link" },
+      "prompt": "입력: 프로젝트에 업로드된 디자인 시스템 가이드·지침 문서(.md) 전체.\n작업: Claude Code CLI가 최상위 시스템 프롬프트로 읽는 CLAUDE.md를 작성해 주세요.\n① 페르소나 — GC메디아이 시니어 UI/UX 프론트엔드 엔지니어\n② 작업 순서 강제 — 시각 요소 적용 전 UI 구조·반응형 뼈대 선행\n③ Figma MCP 규칙 — docs/ 문서 우선 탐색, 임의 스타일 창조 금지, Component 기준점(2031-6499) 일치\n④ 코드 출력 전 Self-Confirm 체크리스트 포함.\n원칙: 추측하지 않는다. Figma·문서에서 확인되지 않은 값은 '확인 불가'로 명시한다.\n확인 불가로 표기된 부분은 즉각 검토를 진행했고 학습했습니다."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "GitHub 배포 & 팀 공유",
+      "desc": "파일명 CLAUDE.md · 프로젝트 루트 배치 → CLI 자동 로드",
+      "promptLabel": "저장·배포 프롬프트",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://app.notion.com/p/GC-3cde60cf04cc809ab662e9115f30ce87?source=copy_link" },
+      "prompt": "작업:검증된 MD 문서를 'GC메디아이 유지보수 템플릿.md'로 저장하고, GitHub에 업로드해 팀원과 공유합니다.\n사용 방법도 함께 정리해 주세요. 부족한 부분은 제가 다듬을테니 간결하게 작성합니다.\n배포 규칙: 파일명은 정확히 CLAUDE.md, 위치는 프로젝트 루트여야 Claude Code CLI가 자동 인식합니다.\n규칙 변경 시 GitHub에서 수정·push → 팀원은 git pull로 최신 규범을 반영합니다.\n사용: 팀원이 자연어로 요청해도 표준 템플릿(분석 → 실행 → 확인)으로 작업 계획을 먼저 제안하고, |\n구조 선행 → 스타일 적용 → Self-Confirm 리포트 순서로 진행합니다."
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "실무 팁: ① 파일명은 정확히 CLAUDE.md, 프로젝트 폴더에 두어야 Claude Code CLI가 자동 로드합니다.\n② 문서 충돌 시 우선순위는 CLAUDE.md > Figma Component 기준점(2031-6499) > 개별 가이드 순입니다.\n③ 코드 출력 전 Self-Confirm 5항목(구조 선행·스타일 일치·반응형 통합·토큰 준수·컴포넌트 준수) 중\n하나라도 X면 해당 단계로 돌아가 수정합니다."
+        }
+      ]
+    }
+  ]
+}

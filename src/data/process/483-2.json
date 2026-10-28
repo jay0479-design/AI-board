@@ -1,0 +1,50 @@
+{
+  "nodeId": "483:2",
+  "author": "이주희",
+  "order": 8,
+  "template": "skill-prompt-guide",
+  "title": "방사선검사 화면 HTML 제작 — 처방조제실 개발전달 HTML을 기준 템플릿으로",
+  "subtitle": "의사랑 EMR · 고도화 · 레거시 캡처 + 기획안 기준 · 단일 HTML",
+  "aiTags": ["Claude"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "기준 템플릿으로 화면 뼈대 생성",
+      "desc": "처방조제실 개발전달 HTML을 템플릿 삼아 단일 HTML로",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "첨부한 처치오더관리_개발전달.html을 기준 템플릿으로 삼아, 같은 EMR의 [메뉴명] 화면을 만들어줘.\n* 상단바(타이틀30/메뉴26/툴바60/상태26), 카드 레이아웃(캔버스 #EBEEF3, 6px 패딩, radius 6), 좌/우 스플리터, 라이트·다크 테마, Pretendard base64 내장 등 기존 규칙 유지\n* 색상 토큰·폰트·버튼·다이얼로그 스타일 동일하게 재사용\n* [이 화면에서 달라지는 부분: 좌측 목록 컬럼, 우측 영역 등]\n자체완결형 단일 HTML로, CDN 없이."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "기획안 반영 + 원본 스타일 추출로 미세조정",
+      "desc": "스크린샷 확인 → 수정 → 롤백 반복",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "환자목록 아래 조회기간에 일별, 기간별 추가되어야해. 기획안(첨부파일) 참고해. 디자인 스타일은 계속 처치오더로 적용이야.\n조회기간, 날짜 세트 한 줄로 넣을 수 있나?? 스플라인 영향, 기간별일 경우 고려했을 때",
+      "images": [
+        { "label": "Before — 레거시 방사선검사 화면 캡처", "src": "" },
+        { "label": "After — 처방조제실 토큰 적용 HTML", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 처방조제실과 골격·토큰이 동일한 237KB 단일 HTML. 툴바 아이콘 4종은 변경분 SVG 패키지로 개발팀 이관.\n팁: \"별도 지시 없으면 모든 수정은 원본 HTML에서 해당 스타일을 추출해 적용, 임의 스타일 금지\"를 초반에 못박아 두면 미세조정 왕복이 줄어듦."
+        }
+      ]
+    }
+  ]
+}

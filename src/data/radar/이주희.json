@@ -1,0 +1,489 @@
+{
+  "nodeId": "508:5",
+  "author": "이주희",
+  "title": "프로젝트별 AI 스택 레이더",
+  "subtitle": "각 프로젝트가 어떤 AI 스택으로 배포까지 진행되는지 한눈에 보는 현황판 프로젝트별 어떻게 어떤 AI를 사용하는지 공유해요",
+  "columns": [
+    "연도",
+    "월",
+    "담당자",
+    "프로젝트명",
+    "현재 단계",
+    "활용 중인 AI 스킬"
+  ],
+  "rows": [
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "4월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[UBIST OTC] 아이콘 컬러 제안"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "5월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[의사랑] 전시 부스 라이트 버전"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[의사랑 CRM] 제품 소개 리플릿"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[BX,BI] CI 변경 가이드 피그마→HTML"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[의사랑 Express] 실손24 가입 팝업·모달"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[의사랑] 처방조제실 피그마 네이티브 + DS 타이포"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[의사랑] 처방조제실 라이트/다크 테마 개발전달"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "7월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[의사랑] 방사선검사 화면 HTML"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "7월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[의사랑] 로그인 화면 개발전달본"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "7월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[BX,BI] 리뉴얼 보고 덱 HTML + 모션"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "8월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[IR·사내] 팝업 제작 가이드 + 배너 에디터"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[BX,BI] 심볼·타이포 시안 보드 + 대표 보고 장표"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[디자인시스템] D_MEDIAi 보고  장표 + 대표님&본부"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "10월"
+        },
+        {
+          "text": "이주희"
+        },
+        {
+          "text": "[팀] AI 활용 공유 보드 카드 작성"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footnote": "2026 이주희"
+}

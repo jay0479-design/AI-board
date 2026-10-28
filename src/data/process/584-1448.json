@@ -1,0 +1,51 @@
+{
+  "nodeId": "584:1448",
+  "author": "이미애",
+  "group": "Group · ① 프로젝트 (기획→디자인→구현)",
+  "order": 4,
+  "template": "skill-prompt-guide",
+  "title": "온라인 서비스센터 홈카드 — 콘텐츠 적용용 AI 프롬프트 도구 구축",
+  "subtitle": "의사랑닷컴 온라인 서비스센터 · 운영 도구 · 2026.09 · 비디자이너 활용",
+  "aiTags": ["Claude"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "콘텐츠 구조 정의",
+      "desc": "홈카드 콘텐츠 형식·규칙 정리",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "프롬프트 도구 제작 · 회신 반영",
+      "desc": "관리자 회신 검토 후 수정사항 반영",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요.",
+      "images": [
+        { "label": "Before — 수동 콘텐츠 작성", "src": "" },
+        { "label": "After — 프롬프트 도구로 생성한 홈카드", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 홈카드 콘텐츠를 프롬프트 도구로 생성하는 방식 구축, 관리자 회신 기반 수정 진행.\n팁: 확인 필요"
+        }
+      ]
+    }
+  ]
+}

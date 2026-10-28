@@ -1,0 +1,50 @@
+{
+  "nodeId": "428:421",
+  "author": "정현영",
+  "order": 8,
+  "template": "skill-prompt-guide",
+  "title": "GC메디아이 BI/BX 리서치 · 폰트 후보 발굴 + 라이선스 심의",
+  "subtitle": "후보 리서치(국·영문 10종) → 나레비 시나리오 → 실폰트 시안 시트 → 라이선스 전수 검증 → 통과 폰트만 패키징",
+  "aiTags": ["Claude", "Figma MCP"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "후보 리서치 · 비교 시트",
+      "desc": "국·영문 10종 발굴 → 계열 분류 → 나레비 트랙 → 동일 규격 시안 시트",
+      "promptLabel": "① 폰트 리서치 + ② 나레비 비교 시트 프롬프트",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://app.notion.com/p/BIBX-AI-3c8e60cf04cc80229643f2eebee4e62b" },
+      "prompt": "[브랜드명]의 로고 리뉴얼용 폰트를 리서치합니다. 현재 [기존 폰트]로 제작한 로고가 있고, 이와 비슷한 계열이면서 디벨롭 가능한 영문/국문 폰트가 각 10종 필요합니다.\n조건: ① 상업적 무료(비상업 조건 절대 불가) ② 구매 후 상업 사용 가능한 유료 폰트도 별도 표기하여 제시\n③ [원하는 톤: 예) 우버처럼 미니멀·심플한 타이포 로고, 둥글거나 귀여운 계열 배제] |\n④ 전문 BI/BX 디자이너 역량으로 계열 분류와 폰트별 조형 분석 포함 ⑤ 나레비(비교) 시나리오로 트랙 구성까지 제안\n\n② 시트 제작: 제안한 나레비 시나리오의 폰트를 실제로 다운로드하여 시안을 제작해주세요.\n- 동일 규격 세팅: [웨이트, 예: 800] / 자간 [+2%] / 임시 단색\n- 워드마크: [브랜드명 1], [브랜드명 2], [브랜드명 3]을 폰트별 한 줄 비교\n- 3200px PNG로 출력 (Figma에 바로 붙일 수 있게)\n- 접근 불가한 폰트는 유사 폰트로 대체하지 말고 제외 사유와 공식 다운로드 경로를 명시"
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "라이선스 심의 · 패키징",
+      "desc": "내장 메타데이터(name ID 13)로 OFL 전수 검증 → 등급 분류 → 통과분만 zip",
+      "promptLabel": "③ 라이선스 심의 + 패키징 프롬프트 (④ 개별 폰트 확인 프롬프트는 노션)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://app.notion.com/p/BIBX-AI-3c8e60cf04cc80229643f2eebee4e62b" },
+      "prompt": "제시한 폰트 중 저작권 심의를 엄중히 거쳐 통과한 폰트만 패키징해주세요.\n심의 기준: ① 상업 사용 무료 ② BI/CI(로고·브랜드명) 사용 허용 ③ 수정(아웃라인 커스텀) 가능\n④ 제3자 재배포 허용 ⑤ 폰트 파일 내장 메타데이터(name ID 13)로 라이선스 전수 직접 검증\n- 검증 근거에 따라 1등급/2등급/탈락으로 분류하고 사유 명시\n- 각 폰트 폴더에 라이선스 원문 또는 검증 NOTICE 동봉\n- 최상위에 심의 결과 README(법무 검토용) 포함하여 zip으로 전달\n- 재배포 금지 폰트는 파일에 담지 말고 공식 다운로드 링크만 안내",
+      "images": [
+        { "label": "나레비 비교 시트 (레퍼런스 및 프로토타입 제작 모음)", "src": "/assets/process/428-421/1.png", "alt": "나레비 비교 시트 Figma 캔버스", "figmaUrl": "https://www.figma.com/design/BJCcwYH39ttJouz4uQjZAu/BI-BX-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=2425-2&t=7n2XMSRdF0Z2E1V8-11" },
+        { "label": "심의 통과 폰트 팩 (OFL 원문·NOTICE 동봉)", "src": "/assets/process/428-421/2.png", "alt": "심의 통과 폰트 팩 워드마크 시안", "figmaUrl": "https://www.figma.com/design/BJCcwYH39ttJouz4uQjZAu/BI-BX-%EB%A6%AC%EB%89%B4%EC%96%BC?node-id=993-652&t=7n2XMSRdF0Z2E1V8-11" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 영문 8종·국문 15종 OFL 통과(2등급 4종 별도), 나레비 시트 2종, 폰트 팩 4종 + Geist 패키지(라이선스 원문 동봉).\n심의 등급: 1등급 = 내장 메타데이터로 OFL 1.1 직접 확인 / 2등급 = 공식 전문 통과·내장 필드 부재 / 탈락 = 조항 충돌.\n팁: ① \"상업 무료 ≠ BI 사용 가능\". 수정·재배포 금지, 프로모션 조항을 폰트별로 확인(더잠실체·Satoshi 탈락 사례).\n② OFL은 폰트 단독 유료 판매만 금지. 로고 커스텀·상표 출원 가능, RFN 조항은 폰트 파일 수정 배포에만 적용.\n③ 접근 불가 폰트는 유사 폰트로 대체하지 말고 제외 사유·공식 경로를 적게 한다.\n④ 불확실한 조항은 '확인 필요'로 표기하도록 프롬프트에 명시한다.\n• 무료 폰트의 경우 클로드코드로 로컬에 직접 설치 요청이 가능하다."
+        }
+      ]
+    }
+  ]
+}

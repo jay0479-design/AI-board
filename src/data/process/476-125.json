@@ -1,0 +1,50 @@
+{
+  "nodeId": "476:125",
+  "author": "이주희",
+  "order": 4,
+  "template": "skill-prompt-guide",
+  "title": "CI 변경 가이드(11장) 피그마 → HTML 변환 시도 — 대형 페이지 타임아웃 사례",
+  "subtitle": "브랜드/CI · 유지보수 · 2026.06 · 실패·중단 기록 (팁이 핵심)",
+  "aiTags": ["Claude", "Figma MCP"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "읽기 확인",
+      "desc": "프로토타입 링크로 프레임이 읽히는지 먼저 확인",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "figma mcp로 html만들기\n[피그마 proto 링크, node-id=26-58]\n읽을수 있는지 확인"
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "전체 문서 변환 시도",
+      "desc": "페이지 전체 조회 → 300초 타임아웃 2회 → 중단",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "2 (전체 가이드 문서 변환 선택)\ncowork로 할까?  표지 2장 포함 총 11장\n→ 이후 프레임별 node-id 전달 단계에서 기록 종료 (완성본 없음)",
+      "images": [
+        { "label": "Before — 피그마 가이드 표지(26:58) 읽기 성공", "src": "" },
+        { "label": "After — 미완 (이미지 없음, 슬롯 끄기 권장)", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 표지 1장은 레이아웃·색·로고 에셋까지 정상 추출, 11장 전체 변환은 미완.\n팁: 피그마 MCP는 페이지 단위(0:1) 조회가 큰 파일에서 타임아웃 남 — 프레임마다 \"선택 항목 링크 복사\"로 node-id를 모아 하나씩 읽히는 게 정답. 환경(Cowork)을 바꿔도 같은 서버라 해결 안 됨. 에셋 URL은 7일 만료."
+        }
+      ]
+    }
+  ]
+}

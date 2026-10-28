@@ -1,0 +1,12 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    { "name": "web", "runtimeExecutable": "npm", "runtimeArgs": ["run", "dev"], "port": 5173 },
+    {
+      "name": "labviewer-proto",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["C:/TEMP/claude/C--Users-jay0479------/9f850305-d452-4a86-8897-34b593dc7915/scratchpad/serve.js", "C:/Users/jay0479/Downloads/랩뷰어_v1.3_프로토타입_20261021/랩뷰어_v1.3_프로토타입_20261021/프로토타입", "8765"],
+      "port": 8765
+    }
+  ]
+}

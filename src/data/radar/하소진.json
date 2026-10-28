@@ -1,0 +1,161 @@
+{
+  "nodeId": "618:2301",
+  "author": "하소진",
+  "title": "프로젝트별 AI 스택 레이더",
+  "subtitle": "각 프로젝트가 어떤 AI 스택으로 배포까지 진행되는지 한눈에 보는 현황판 프로젝트별 어떻게 어떤 AI를 사용하는지 공유해요",
+  "columns": [
+    "연도",
+    "월",
+    "담당자",
+    "프로젝트명",
+    "현재 단계",
+    "활용 중인 AI 스킬"
+  ],
+  "rows": [
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "하소진"
+        },
+        {
+          "text": "[GC랩뷰어] 검사결과 뷰어 프로토타입 (설계서 v1.0~v1.2)"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "10월"
+        },
+        {
+          "text": "하소진"
+        },
+        {
+          "text": "[GC랩뷰어 - 검사결과지] PDF v0.6 AI 해석 섹션"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "10월"
+        },
+        {
+          "text": "하소진"
+        },
+        {
+          "text": "[GC랩뷰어] 설계서 v1.3 반영 + 확인 가이드 이관"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "10월"
+        },
+        {
+          "text": "하소진"
+        },
+        {
+          "text": "[의사랑AI] 랜딩 개편안 HTML 디자인 산출물"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footnote": "2026 하소진"
+}

@@ -1,0 +1,50 @@
+{
+  "nodeId": "479:301",
+  "author": "이주희",
+  "order": 13,
+  "template": "skill-prompt-guide",
+  "title": "D_MEDIAi 디자인 시스템 보고 — Notion 문서 → 12장 발표 덱(HTML, PDF 저장)",
+  "subtitle": "디자인 시스템 · 고도화 · 2026.09 · 유닛장·대표 보고용",
+  "aiTags": ["Claude"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "Notion → 발표 덱",
+      "desc": "문서 구조를 12장으로 재편",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "[Notion 페이지 링크]\n발표용 장표로 만들어줘. pdf로 저장가능하도록."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "발표 대본·질의 대비",
+      "desc": "3계층 토큰 구조를 내 언어로 정리",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "대표·유닛장 질문 대비 대화(Ant Design 3단 토큰, 스토리북 구조, 브랜드 색 전환 범위)는 Q&A 형식 — 대표 원문: 아까 디자인 시스템이었나 스토리북이었나 뭔가 업계 표준 w?뭐 이런거 따랐다고 했던거 같은데 / 스토리북 개발 표준 구조라는건 딱히 없어?",
+      "images": [
+        { "label": "Before — Notion 긴 문서", "src": "" },
+        { "label": "After — 12장 덱 (PDF 저장 버튼)", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 표지→왜 필요한가→FAQ→파일 구성(48p·3덩어리)→3계층 토큰→스토리북 방식→규모→AI 역할→적용 사례 6건→효과→v2 계획, 12장 HTML(← → 키·PDF 저장).\n팁: Notion 임시 이미지 링크는 덱에 못 넣음 — 캡처는 표로 대체되니 중요 이미지는 따로 첨부. 발표 전 \"내가 설명해볼게, 틀리면 고쳐줘\" 방식이 개념 소화에 가장 효과적이었음."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "nodeId": "618:1957",
+  "author": "하소진",
+  "order": 1,
+  "template": "skill-prompt-guide",
+  "title": "랩뷰어 v1.3 · 화면설계서 → DS 기반 HTML 프로토타입 + 확인 가이드",
+  "subtitle": "기획·DS 학습 → 화면별 HTML 구현 → 버전 반영·확인 가이드로 이관 (2026.09–10 · Claude Code·Figma MCP)",
+  "aiTags": ["Claude Code", "Figma MCP"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "기획·DS 학습 후 화면별 구현",
+      "desc": "DS·화면설계서를 MD로 고정하고 GCLAB_01부터 하나씩",
+      "promptLabel": "학습·구현 프롬프트 (실제 원문 · 축약)",
+      "boxLabel": "PROMPT",
+      "prompt": "이 프로젝트에 사용할 디자인 시스템 링크를 줄게. 학습해줘. html을 산출물로 제작할 시, 반드시 하기 디자인 시스템을 따르며 이외의 것으로 그려야할 때 반드시 언급이 필요해\n[화면설계서 링크] 기획 내용이 업데이트됐어.\nGCLAB_01부터 구현해줘. 사이드바는 모두 \"퀵바\"로 통일될 거야. 한개씩 작업해보자. 기존 목업html은 참고하지 않고, 현재 기획서 및 학습한 디자인 시스템을 활용해줘."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "버전 반영 · 확인 가이드 이관",
+      "desc": "새 기획 버전 비교 → MD·HTML 반영 → 가이드·캡처·zip 전달",
+      "promptLabel": "반영·이관 프롬프트 (실제 원문 · 축약)",
+      "boxLabel": "PROMPT",
+      "prompt": "[v1.3 링크] v1.3 기획 내용에서 업데이트 된 사항 있는지 확인해줘\nPLANNING_SPEC.md에 반영하고 html에도 적용해줘\n디자인 산출물 공유 시에 활용할 \"확인 가이드\"를 제작하고 싶어. 기획서 기반으로 해당 내용을 바로 확인할 수 있는 로직이었으면 좋겠어.\n현재 기준 대표페이지 몇개 스크린샷으로 캡쳐해서 저장해줘. 개발 쪽에서 활용할 개발 계획서에 활용될 용도야",
+      "images": [
+        { "label": "대표 화면 (v1.3 프로토타입) · 검사결과 뷰어 / 퀵바", "src": "/assets/process/618-1957/1.png", "alt": "뷰어" },
+        { "src": "/assets/process/618-1957/2.png", "alt": "퀵바" },
+        { "label": "퀵바 · 검사별 보기 + 그래프 같이 보기", "src": "/assets/process/618-1957/3.png", "alt": "검사별 보기 그래프" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 기획 v1.0→v1.3 변경을 화면 4종(진입점·퀵바·뷰어·후속관리)과 확인 가이드 99개 항목에 반영하고, zip 하나로 기획·개발에 전달.\n팁: 규칙(DS 준수)과 용어(퀵바)를 첫 프롬프트에 박고 MD로 저장해 두면 세션이 바뀌어도 같은 기준으로 작업돼요. 새 버전은 \"변경점만 먼저 정리 → 하나씩 반영\" 순서가 안전합니다."
+        }
+      ]
+    }
+  ]
+}

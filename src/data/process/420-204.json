@@ -1,0 +1,49 @@
+{
+  "nodeId": "420:204",
+  "author": "정현영",
+  "order": 2,
+  "template": "skill-prompt-guide",
+  "title": "UBIST 종별 조정 팝업 · 내용 반영 (운영 활용 예시)",
+  "subtitle": "엑셀 안내문 분석 → 기존 Figma 팝업 디자인을 유지한 채 문구·표만 교체 (3종)",
+  "aiTags": ["Claude", "Figma MCP"],
+  "docTags": ["📎 Excel"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "원본 분석",
+      "desc": "엑셀 팝업 문구 추출 + 기존 디자인·표 구조 파악",
+      "promptLabel": "분석 프롬프트",
+      "boxLabel": "PROMPT",
+      "prompt": "엑셀 팝업 문구 및 모든 시트를 분석하고, 첨부 Figma 팝업 구조를 그대로 읽어주세요"
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "디자인 유지 · 내용 교체",
+      "desc": "프레임 복제 후 텍스트만 교체 (색상·표·로고·폰트 유지)",
+      "promptLabel": "제작 프롬프트",
+      "boxLabel": "PROMPT",
+      "prompt": "디자인·폰트는 유지하고 엑셀 내용만 반영해 팝업 3종 제작을 진행하세요",
+      "images": [
+        { "label": "Before · 기존 (유비케어 · 25년 10월)", "src": "/assets/process/420-204/1.png", "alt": "기존 유비케어 의약품 통계 정보 서비스 종별 조정 안내 팝업 3종" },
+        { "label": "After · 수정본 (GC메디아이 · 26년 9월)", "src": "/assets/process/420-204/2.png", "alt": "GC메디아이 수정본 종별 조정 안내 팝업 3종" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 디자인 유지 + 팝업 3종(상급→종합·상급→병의원·종합→병의원) 내용 교체 완료 (원본 비파괴 보존).\n팁: 엑셀 파일과 피그마 디자인  MCP를 연결하여 스타일을 매칭시킵니다."
+        }
+      ]
+    }
+  ]
+}

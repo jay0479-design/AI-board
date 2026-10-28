@@ -1,0 +1,50 @@
+{
+  "nodeId": "471:67",
+  "author": "이주희",
+  "order": 7,
+  "template": "skill-prompt-guide",
+  "title": "처방조제실 화면 — 라이트/다크 테마 & 개발 전달 패키지",
+  "subtitle": "의사랑 EMR · 고도화 · 2026.06~07 · claude.ai 채팅에서 HTML 원본 첨부로 진행",
+  "aiTags": ["Claude"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "HTML 정리",
+      "desc": "폰트·수치·EMR 톤 정돈 (내용·아이콘은 그대로)",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "[처치오더관리_0623.html 첨부]\n폰트는 프리텐다드 적용. 소수점은 정수로 변경. EMR에 맞는 정돈되고 깔끔한 디자인으로 수정 (내용, 아이콘 변경없이)"
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "테마 변형 & 비교",
+      "desc": "레퍼런스 4종 → 토글 비교본 → 좌우 분할 + 다크",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "[레퍼런스 이미지 첨부] A·B 타입 요청 원문: 확인 필요\nC,D 타입 추가\n→ 제안 수락: 네 타입을 한 화면 토글로 비교 → 두 테마를 좌우로 동시에 띄우는 분할 비교(side-by-side) 버전 + 다크 모드",
+      "images": [
+        { "label": "Before — 원본 HTML(테마 없음)", "src": "" },
+        { "label": "After — C타입 라이트/다크", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: C타입 확정 → 라이트·다크·토글 통합·개발스펙·갤러리 5종 zip으로 개발 이관, 방사선검사 화면에 같은 스타일 재사용.\n팁: 원본 HTML 첨부 + \"내용·아이콘 변경 없이\" 한 줄 + 레퍼런스 이미지만 주면 테마 변형이 안정적으로 나옴. 테마는 격리된 style 블록이라 되돌리기 쉬움."
+        }
+      ]
+    }
+  ]
+}

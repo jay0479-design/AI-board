@@ -1,0 +1,89 @@
+@import "tailwindcss";
+
+/* ---------- Design tokens (from Figma "🧩 Design System Components") ---------- */
+@theme {
+  --font-sans: "Pretendard", "Pretendard Variable", -apple-system, BlinkMacSystemFont, system-ui, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+  --font-noto: "Noto Sans KR", "Pretendard", sans-serif;
+  --font-roboto: "Roboto", "Inter", sans-serif;
+  --font-inter: "Inter", "Roboto", sans-serif;
+
+  /* text */
+  --color-text-primary: #1a1a24;
+  --color-text-secondary: #595c6b;
+  --color-text-tertiary: #999ca8;
+  --color-text-muted: #737585;
+  --color-text-code: #d9deeb;
+  --color-text-code-label: #6f7390;
+
+  /* surface */
+  --color-surface-page: #f7f7fa;
+  --color-surface-card: #ffffff;
+  --color-surface-subtle: #f5f5fa;
+  --color-surface-divider: #eeeef3;
+  --color-surface-code: #1c1c29;
+  --color-surface-group: #f6f6f6;
+  --color-border-default: #e5e5ed;
+  --color-border-soft: #e8e8f0;
+
+  /* accent */
+  --color-accent-blue-bg: #eef0ff;
+  --color-accent-blue-text: #4d6bbf;
+  --color-accent-orange-bg: #fff4e0;
+  --color-accent-orange-bg-soft: #fff8ec;
+  --color-accent-orange-text: #b3542e;
+  --color-accent-green-bg: #dcfce7;
+  --color-accent-green-bg-soft: #f0fdf4;
+  --color-accent-green-text: #15803d;
+  --color-accent-navy: #001b68;
+  --color-accent-note: #d8ff74;
+  --color-accent-fill: #ffb3b4;
+
+  /* cover */
+  --color-cover-start: #0c324c;
+  --color-cover-end: #082336;
+  --color-cover-chip: #3b5e76;
+  --color-cover-progress: #1149a3;
+
+  /* radius */
+  --radius-4: 4px;
+  --radius-6: 6px;
+  --radius-8: 8px;
+  --radius-12: 12px;
+  --radius-16: 16px;
+  --radius-20: 20px;
+  --radius-32: 32px;
+
+  --shadow-card: 0px 2px 8px 0px rgba(0, 0, 0, 0.06);
+  --shadow-card-sm: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    @apply bg-surface-page text-text-primary font-sans antialiased;
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+    overflow-x: hidden;
+    /* 한국어는 글자 중간이 아니라 어절 단위로 줄바꿈 */
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+  }
+  * { box-sizing: border-box; }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; text-decoration: none; }
+}
+
+@layer components {
+  /* Typography scale (Figma text styles) */
+  .t-h1 { @apply text-[28px] font-bold leading-[1.5] tracking-[-0.28px]; }
+  .t-h2 { @apply text-[20px] font-semibold leading-[1.5] tracking-[-0.2px]; }
+  .t-h3 { @apply text-[16px] font-semibold leading-[1.5] tracking-[-0.16px]; }
+  .t-title { @apply text-[14px] font-semibold leading-[1.5] tracking-[-0.14px]; }
+  .t-body { @apply text-[14px] font-normal leading-[1.5] tracking-[-0.14px]; }
+  .t-body-md { @apply text-[14px] font-medium leading-[1.5] tracking-[-0.14px]; }
+
+  /* Layout helpers */
+  .container-page { @apply mx-auto w-full max-w-[1280px] px-4 sm:px-6 lg:px-10; }
+  .card { @apply bg-surface-card border border-border-default rounded-[20px] shadow-[var(--shadow-card)]; }
+  .pre-wrap { white-space: pre-wrap; word-break: keep-all; overflow-wrap: anywhere; }
+}

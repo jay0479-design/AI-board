@@ -1,0 +1,52 @@
+{
+  "nodeId": "422:735",
+  "author": "정현영",
+  "order": 6,
+  "template": "skill-prompt-guide",
+  "title": "바로바로 위젯 프로세스 (기획안 → A·B·C안 → 최종안 C안)",
+  "subtitle": "기획안 HTML을 Figma로 옮겨 컴포넌트부터 정리 → A·B·C안 비교 → C안 확정 → HTML·아이콘·문서 산출",
+  "aiTags": ["Gemini", "Claude", "Figma MCP"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "기획안 이식 & 컴포넌트 정리",
+      "desc": "HTML 기획안 → Figma 컴포넌트·변수·케이스 화면 (Figma가 기준)",
+      "promptLabel": "Figma MCP 이식 프롬프트 (Gemini로 프롬프트를 다듬어서 제공합니다.)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://app.notion.com/p/HTML-3dee60cf04cc80bb9ec5ee67dc2fc2ad?source=copy_link" },
+      "prompt": "입력: 바로바로 위젯 기획안 HTML(v6) + Figma 파일 링크.\n작업: Figma MCP로 연결해 오토레이아웃과 정수 간격을 유지한 채 컴포넌트(버튼·패널·리스트·다이얼로그)로 옮기고,\n컬러·불투명도는 ‘바로바로 위젯’ 변수로 묶어 주세요. 유팜 실 화면(1232×770) 위에 케이스별 화면을 만들고,\n컴포넌트와 케이스는 섹션으로 나눕니다.\n원칙: 컴포넌트 관리는 Figma에서 먼저 합니다. 제가 Figma에서 고친 값이 기준이고,\n그 결과를 HTML로 다시 뽑는 순서로 진행합니다."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "A·B·C안 비교 & HTML 추출",
+      "desc": "A안 접힘 책갈피 · B안 챗봇형 카드 · C안 통합 팝오버 → C안 확정",
+      "promptLabel": "안별 HTML 추출 프롬프트 (대표 1개)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://app.notion.com/p/HTML-3dee60cf04cc80bb9ec5ee67dc2fc2ad?source=copy_link" },
+      "prompt": "배경: A안(접힘 책갈피 + 드래그), B안(쿠쿠 챗봇형 카드), C안(버튼 1개 + 통합 팝오버 264px)을\nFigma에서 먼저 정리했습니다.\n작업: 현재 Figma 컴포넌트를 분석해 A·B·C안을 각각 HTML로 뽑아 주세요. 간격·컬러·폰트는 Figma와 반드시 일치해야 합니다. 원격지원은 바로 연결하지 않고 확인 다이얼로그를 거치게 합니다.\n확인 편의: HTML 상단에 작은 노티 바를 두고 어떤 안·어떤 상태(버튼 → 패널 → 검색 → 원격지원)인지\n구분해 보여 주세요(시뮬레이션 온보딩). 아이콘은 새로 그리지 말고 Figma에서 내보내 주세요.",
+      "images": [
+        { "label": "Before · 기획안 (버튼 3개 + 개별 패널)", "src": "/assets/process/422-735/1.png", "alt": "바로바로 위젯 기획안 화면" },
+        { "label": "A안 · 접힘 책갈피 + 배지 (빠른메뉴 열림)", "src": "/assets/process/422-735/2.png", "alt": "A안 접힘 책갈피 위젯 화면" },
+        { "label": "B안 · 챗봇형 카드 스택 (카드 펼침)", "src": "/assets/process/422-735/3.png", "alt": "B안 챗봇형 카드 스택 화면" },
+        { "label": "C안 (버튼 1개 + 통합 팝오버)", "src": "/assets/process/422-735/4.png", "alt": "C안 통합 팝오버 화면" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "실무 팁: ① 컴포넌트는 Figma에서 먼저 정리하고 HTML은 그 결과를 뽑는 용도로 쓰면, 수정이 한곳에서 끝납니다.\n② HTML 상단 노티 바에 안·상태를 표시해 두면 개발팀이 파일만 열어도 바로 확인할 수 있습니다.\n③ MCP는 클라우드 폰트(프리텐다드는 가능)만 읽으므로 맑은 고딕 같은 로컬 폰트는 Figma 스타일에서 직접 바꾸고,\n아이콘은 Figma SVG 내보내기를 그대로 씁니다."
+        }
+      ]
+    }
+  ]
+}

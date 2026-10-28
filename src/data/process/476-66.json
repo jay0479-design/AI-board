@@ -1,0 +1,50 @@
+{
+  "nodeId": "476:66",
+  "author": "이주희",
+  "order": 3,
+  "template": "skill-prompt-guide",
+  "title": "의사랑 CRM 제품 소개 리플릿 — A4 양면 인쇄용 PDF",
+  "subtitle": "의사랑 CRM · 유지보수&프로모션 · 2026.06 · HTML/CSS → Playwright PDF",
+  "aiTags": ["Claude"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "제작 방식 탐색",
+      "desc": "AI로 인쇄물이 되는지, 템플릿 저작권은 괜찮은지",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "Adobe Express 템플릿을 추천하는 것 같은데 저작권 문제는 없어?\n→ 조건 확정: A4 양면 · 제품 소개 · 내용은 준비됨"
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "리플릿 제작",
+      "desc": "화면 캡처 첨부 → HTML/CSS 조판 → PDF 렌더",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "[CRM 화면 캡처·제품 소개 자료 첨부]\n레이아웃, 컬러, 폰트, 구조 모두 변경 가능. 세련되고 깔끔한 고퀄리티 디자인으로 실행.",
+      "images": [
+        { "label": "Before — 기존 제품 소개 자료", "src": "" },
+        { "label": "After — 리플릿 앞·뒷면 PDF", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 인쇄용 PDF(앞면 대시보드 목업+핵심 가치 3, 뒷면 기능 5 + 푸터)와 수정 가능한 HTML 원본 2종. 디자이너 손 안 대고 1차 시안 완성.\n팁: 결과물은 RGB·재단 여유 없음 — 인쇄소 입고 전에 CMYK 변환과 3mm 블리드 필요 여부를 확인할 것. HTML 원본을 받아두면 문구 수정이 쉬움."
+        }
+      ]
+    }
+  ]
+}

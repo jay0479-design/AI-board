@@ -1,0 +1,50 @@
+{
+  "nodeId": "479:65",
+  "author": "이주희",
+  "order": 10,
+  "template": "skill-prompt-guide",
+  "title": "BI/BX 리뉴얼 보고 덱 — 피그마 13장을 디자인 그대로 HTML로, 장표별 인터랙션 모션 추가",
+  "subtitle": "BI/BX 리뉴얼 · 고도화 · 2026.07 · 1920×1080 풀스크린 · build.py 파이프라인",
+  "aiTags": ["Claude", "Figma MCP"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "피그마 → 정적 HTML",
+      "desc": "디자인 변경 없이 13장 재현",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "내가 디자인한 figma를 디자인 변경없이 html로 만들고, 거기에 모션을 넣고 싶어\n[BI·BX 리뉴얼 피그마 파일 링크]"
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "장표별 모션",
+      "desc": "진입 자동 빌드·클릭 단계 공개·키워드 카드 트윙클 등",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "장표별 모션 지시는 141턴에 걸쳐 짧은 지시로 누적(원문 다수) — 대표 예: 페이지 전환 잔상 없는 즉시 컷, 방향키·휠로 1페이지씩, 슬5는 클릭당 1행 공개(의사랑→AI→유팜→UBIST), 슬7 키워드 카드 무작위 트윙클 + 선택 8장 강조. 개별 원문: 확인 필요",
+      "images": [
+        { "label": "Before — 피그마 정적 덱", "src": "" },
+        { "label": "After — 키보드로 넘기는 HTML 덱 + 모션", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: index.template.html → build.py → index.html/preview.html 파이프라인. SVG 토큰 인라인, 이미지·폰트 base64 내장, zip 산출(index + fonts + assets).\n팁: 모션은 \"진입 자동 / 클릭 단계 / 이탈 리셋\" 3가지로 규칙화하면 장표가 늘어도 지시가 짧아짐. MutationObserver로 빌드하면 자기 자신을 다시 발화시키는 무한루프 주의. 로고는 PNG 대신 AI 파일에서 SVG 추출해야 사선이 안 깨짐."
+        }
+      ]
+    }
+  ]
+}

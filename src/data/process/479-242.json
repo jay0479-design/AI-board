@@ -1,0 +1,50 @@
+{
+  "nodeId": "479:242",
+  "author": "이주희",
+  "order": 11,
+  "template": "skill-prompt-guide",
+  "title": "비디자이너 셀프서비스 도구 — 홈페이지 팝업 제작 가이드 v1.1, 루틴 배너 에디터 v1.0",
+  "subtitle": "IR·사내 커뮤니케이션 · 유지보수&프로모션 · 2026.08 · 단일 HTML 도구",
+  "aiTags": ["Claude"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "팝업 제작 가이드",
+      "desc": "레이아웃 3종·규격표·Do/Don't·체크리스트",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "수정 요청(요지): 이미지 전용 타입 삭제, 이미지+텍스트 순서를 ✕→제목→이미지→본문(최대 3줄)→버튼→오늘 안 보기로, 텍스트 전용은 NOTICE·기간·연락처 빼고 버튼으로"
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "배너 에디터",
+      "desc": "카드뉴스 에디터 구조를 배너용으로 이식",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "[cardnews_editor_v1_0.html · cardnews_guide.html · 샘플컨텐츠리스트.xlsx 첨부]\n우리도 루틴한 배너들은 이런 형태로 만들고 싶어.",
+      "images": [
+        { "label": "Before — 디자인팀에 매번 요청", "src": "" },
+        { "label": "After — 담당자가 직접 입력·저장", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 팝업 가이드 v1.1(Pretendard 서브셋 내장 HTML), 배너 에디터 release v0.9 / master v1.0 — 좌 입력·우 실시간 미리보기, WebP/PNG 저장.\n팁: 기존 도구 HTML을 통째로 주고 \"이 형태로\"라고 하면 구조를 분석해서 이식함 — 사이즈·입력 필드 목록만 먼저 정해두면 빠름. 가이드 수정은 번호 리스트로 주면 교차 참조·번호 재정렬까지 알아서 맞춤."
+        }
+      ]
+    }
+  ]
+}

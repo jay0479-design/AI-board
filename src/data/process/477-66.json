@@ -1,0 +1,50 @@
+{
+  "nodeId": "477:66",
+  "author": "이주희",
+  "order": 12,
+  "template": "skill-prompt-guide",
+  "title": "BI 심볼·타이포 시안 보드 26안(HTML) + 대표 보고 오프닝·클로징 장표(피그마)",
+  "subtitle": "BI/BX 리뉴얼 · 고도화 · 2026.09 · 순환 컨셉 · GC Red/Navy 기준",
+  "aiTags": ["Claude", "Figma MCP"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "시안 확산 보드",
+      "desc": "심볼 16 · 로고타입 6 · 락업 4 — 인터랙티브 HTML",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "우리 컨셉에 맞는 BI 심플한 심볼과 타이포 시안 많이 제안해줘."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "대표 보고 장표 구성",
+      "desc": "팀원 2안 피그마 덱 앞뒤에 리드용 오프닝·비교 장표 삽입",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "우리 팀원들이 열심히 시안을 만들어서 3차까지 냈고, 계속 수정 디벨롭하면서 2가지 시안으로 압축했거든. 시안별로 피그마에서 장표를 만들었어. 대표님에게 보고를 할건데. 시안 발표는 각 담당 디자이너가 할거고. 나는 시작 장표가 필요할까? 아니면 그냥 말로 시작하고 담당자들에게 넘기면 될까?",
+      "images": [
+        { "label": "Before — 팀원 2안 덱만 있는 상태", "src": "" },
+        { "label": "After — 오프닝 → A안 → B안 → 비교 클로징", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 스테이지 배경(White/Navy/Gray) 전환·카드 클릭 반전이 되는 단일 HTML 시안 보드(Pretendard 서브셋 내장) + 피그마 덱에 리드용 오프닝·클로징 장표 추가.\n팁: 피그마 섹션 안에 프레임을 넣으면 x/y가 섹션 기준 좌표라 겹침이 생김 — 추가 후 반드시 화면 확인. 비교 장표의 심볼은 \"전부 넣거나 전부 빼거나\"로 규칙을 줘야 B안 시스템 논리가 왜곡되지 않음."
+        }
+      ]
+    }
+  ]
+}

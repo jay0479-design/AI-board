@@ -1,0 +1,53 @@
+{
+  "nodeId": "584:1269",
+  "author": "이미애",
+  "group": "Group · ① 프로젝트 (기획→디자인→구현)",
+  "order": 1,
+  "template": "skill-prompt-guide",
+  "title": "클라우드DB백업 에이전트 — 피그마 디자인 시스템 9종 → WPF XAML 프론트 구현",
+  "subtitle": "의사랑 클라우드DB백업 · 신규 · 2026.05–06 · 디자인→실제 앱 구현",
+  "aiTags": ["Claude", "Figma MCP", "Claude Code"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "피그마 디자인 시스템 구축",
+      "desc": "에이전트 화면 4건 + 컴포넌트 9종",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "Claude Code로 XAML 구현",
+      "desc": "메인 에이전트 20건·안내문·공지 + 모달 48p 수정",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요.",
+      "images": [
+        { "label": "Before — 피그마 디자인 시안", "src": "" },
+        { "label": "After — WPF 실행 화면", "src": "" },
+        { "label": "이미지 3", "src": "" },
+        { "label": "이미지 4", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 메인 에이전트 20건, 안내문 2건, 공지사항 2건을 XAML로 구현하고 모달 UI 48p 수정까지 직접 반영.\n팁: 확인 필요"
+        }
+      ]
+    }
+  ]
+}

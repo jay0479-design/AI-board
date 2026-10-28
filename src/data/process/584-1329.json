@@ -1,0 +1,53 @@
+{
+  "nodeId": "584:1329",
+  "author": "이미애",
+  "group": "Group · ① 프로젝트 (기획→디자인→구현)",
+  "order": 2,
+  "template": "skill-prompt-guide",
+  "title": "의사랑 CRM — 디자인 시스템 레이어 정리 → MD 추출 → React 구현 테스트",
+  "subtitle": "의사랑 CRM · 고도화 · 2026.04–05 · 디자인-투-코드 파이프라인",
+  "aiTags": ["Claude Code", "Figma MCP"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "레이어 정리 & MD화",
+      "desc": "디자인 시스템 레이어 정리 후 화면 디자인 MD 추출",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "React 구현 테스트",
+      "desc": "화면별 React 구현 + 워크플로우용 MD 제작",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요.",
+      "images": [
+        { "label": "Before — 피그마 화면", "src": "" },
+        { "label": "After — React 구현 화면", "src": "" },
+        { "label": "이미지 3", "src": "" },
+        { "label": "이미지 4", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 화면 디자인 MD화 → React 구현 테스트 완료, 이후 워크플로우 적용용 MD 파일로 정리.\n팁: 확인 필요"
+        }
+      ]
+    }
+  ]
+}

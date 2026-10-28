@@ -1,0 +1,52 @@
+{
+  "nodeId": "406:171",
+  "author": "정현영",
+  "order": 7,
+  "template": "skill-prompt-guide",
+  "title": "의사랑 프로모션 메인 배너 · 3D 에셋 제작",
+  "subtitle": "기획안 + 아이콘 레퍼런스 10장 이상 첨부 → ChatGPT 1차 생성 → 생성본을 기준 이미지로 재첨부해 텍스트·여백만 정교화",
+  "aiTags": ["ChatGPT"],
+  "docTags": ["📎 Notion"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "입력 준비 · 1차 생성",
+      "desc": "기획안 + 아이콘 레퍼런스 10장 이상 첨부 후 ChatGPT Work로 생성",
+      "promptLabel": "첨부 구성 (프롬프트보다 첨부가 결과를 좌우)",
+      "boxLabel": "INPUT",
+      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://app.notion.com/p/3ece60cf04cc8068a885fe74e3ec939d?source=copy_link" },
+      "prompt": "① 기획안 1부: 혜택 구조, 소개 단계별 금액(40·55·70만원), 배너 사용 위치\n② 아이콘 레퍼런스 10장 이상: 원하는 질감·조명·형태 예시(투명 아크릴, 글로시 3D)\n③ 위 첨부를 기준으로 ChatGPT에서 1차 에셋 생성 → 마음에 드는 결과를 STEP 2의 기준 이미지로 사용"
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "기준 이미지 고정 · 정교화",
+      "desc": "1차 생성본을 기준 이미지로 첨부 → 형태 유지, 텍스트·여백·유리 겹침만 개선",
+      "promptLabel": "정교화 프롬프트 (요약 · 전문은 노션)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://app.notion.com/p/3ece60cf04cc8068a885fe74e3ec939d?source=copy_link" },
+      "prompt": "첨부된 현재 에셋을 기준 이미지로 사용. 실루엣·구도·쿠폰 배열은 그대로 유지하고 새 오브젝트를 만들지 않는다.\n- 오브젝트: 투명 아크릴 폴더형 선물 패키지 + 위로 펼쳐지는 쿠폰 3장(앞→뒤로 혜택 증가)\n- 쿠폰 3장 텍스트: 첫 소개 40만원(아이스 블루) / 두 번째 소개 55만원(핑크) / 세 번째 소개 70만원(퍼플)\n- 금액은 굵은 산세리프로 가장 크게, 단계 문구는 작고 가볍게. 텍스트는 인쇄된 것처럼 각도·원근·광원에 맞춤\n- 스타일: premium 3D web illustration, glossy acrylic, soft studio lighting. 네온·렌즈 플레어·과한 광택 제거\n- 출력: 배경 완전 투명, 타이틀·설명 문구 없이 에셋 하나만, 고해상도 PNG",
+      "images": [
+        { "label": "Before ·기획 본", "src": "/assets/process/406-171/1.png", "alt": "의사랑 프로모션 메인 배너 기획안" },
+        { "label": "After · 생성 이미지", "src": "/assets/process/406-171/2.png", "alt": "ChatGPT 1차 생성 3D 에셋 (선물 패키지 + 쿠폰 3장)" },
+        { "label": "After · 생성 이미지", "src": "/assets/process/406-171/3.png", "alt": "[의사랑닷컴] 메인배너_260928_cut · 이미지 수정본 (첫 소개 40만원 / 두 번째 소개 55만원 / 세 번째 소개 70만원 텍스트 오버레이)" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 투명 배경 PNG 메인 배너 비주얼.\n전체 프롬프트 및 가이드는 노션 프롬프트로 정리.\n팁: ① 프롬프트만 넣으면 형태가 재해석되기 쉬움 → 마음에 든 생성본을 기준 이미지로 재첨부하고 수정 범위를 좁힐 것.\n② 금액·문구가 바뀌면 프롬프트의 텍스트 항목부터 수정. 이 부분 관련하여 직접 합성하는 방법이 더 정교함.\n③ 배경 투명·문구 추가 금지를 명시하면 배너에 바로 합성 가능. 다만 원하는 폰트 넣는 방법은 쉽지 않으므로\n직접 수정 권고 디자이너가 직접 개입하면 더 정교한 이미지로 개선 가능."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "nodeId": "478:125",
+  "author": "이주희",
+  "order": 9,
+  "template": "skill-prompt-guide",
+  "title": "의사랑 로그인 화면(임상병리실 5.0) — 시안 A~D → 라이트/다크 × 4상태 개발전달본",
+  "subtitle": "의사랑 EMR · 고도화 · 2026.07 · 의사랑_로그인.html 단일 파일(442KB) · 개발 전달 완료",
+  "aiTags": ["Claude"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "로그인 시안 4종",
+      "desc": "마스터 파일에서 토큰·폰트·로고 추출, 임의 스타일 금지",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "[처치오더관리_개발전달.html 첨부]\n이런 화면 디자인이 적용된 프로그램에 들어가기 전 로그인 창 구현해줘.\n라이트 / 다크 확인 할수 있는건 로그인창 옆에 시뮬레이터로 따로 만들어줘."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "최종 개발전달본 빌드",
+      "desc": "1440×960 · 아크 배경 · 설정 팝오버 모션 데모 · 상태 시뮬레이터",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "의사랑 EMR 로그인 화면을 단일 HTML로 만들어줘. 아래 기준을 그대로 따르고 임의 스타일 금지.\n[기준] 다크 토큰은 처치오더관리_개발전달.html에서 추출, body.theme-dark 클래스 토글 하나로 전 요소 대응 / 필드·토스트·스피너·Caps 경고는 의사랑_로그인_7 컨벤션 그대로 / Pretendard 4종 base64\n[레이아웃] 1440×960, 1920px까지 좌측 285px 고정·초과분 50:50 / 원형 아크(r 942)로 화이트 패널 분리 / 좌측 카피+CI+모션 데모 466×379 / 우측 폼 폭 399\n[컴포넌트·동작·검수용] 필드 14px·border 1.5·radius 6 / 확인 270px + 취소 flex / 오류 토스트·로딩·Caps Lock / Enter 로그인·취소 전체 초기화 / 우하단 시뮬레이터(테마·상태) — 전달 시 제거 주석\n※ 전체 프롬프트(토큰표 포함)는 Notion 링크",
+      "images": [
+        { "label": "Before — 기존 로그인 창 / 시안 A~D", "src": "" },
+        { "label": "After — 개발전달본 라이트/다크", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 라이트/다크 2테마 × 4상태(기본·오류·로그인 중·Caps Lock)를 클래스 하나로 전환하는 1440×960 로그인 페이지. 좌측 설정 팝오버 모션 데모(5장면, 2회 재생→10초 대기), 우측 399px 폼. 개발 전달 완료.\n팁: ① 토큰을 :root/body.theme-dark에만 두면 컴포넌트 CSS 수정 없이 다크 대응 ② 상태 시뮬레이터로 스크린샷 없이 검수, 전달 시 블록만 삭제 ③ 스페이서 공식 max(285px, calc(285px+(100vw-1920px)*.5))로 고정 프레임을 와이드 화면 중앙에 ④ 제품 기능 소개는 GIF 대신 PNG 장면+CSS keyframes 인라인"
+        }
+      ]
+    }
+  ]
+}

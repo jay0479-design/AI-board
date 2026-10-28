@@ -1,0 +1,51 @@
+{
+  "nodeId": "584:1806",
+  "author": "이미애",
+  "group": "Group · ④ 프로세스",
+  "order": 11,
+  "template": "skill-prompt-guide",
+  "title": "Claude·Manus로 디자인 화면 구조 검토 — AI native 워크플로우 리서치",
+  "subtitle": "의사랑 클라우드DB백업 · 리서치 · 2026.05 · 프로세스",
+  "aiTags": ["Claude", "Manus"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "AI native 워크플로우 리서치",
+      "desc": "AI 워크플로우 적용 자료 조사",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "화면 구조 검토 · 개발팀 리뷰",
+      "desc": "Claude·Manus로 화면 구조 검토 후 개발팀 리뷰",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요.",
+      "images": [
+        { "label": "Before — 기존 화면 구조", "src": "" },
+        { "label": "After — AI 검토 반영 구조", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: Claude·Manus로 화면 구조 검토 → 개발팀과 AI-Native 워크플로우 리뷰 진행.\n팁: 확인 필요"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "nodeId": "479:183",
+  "author": "이주희",
+  "order": 1,
+  "template": "skill-prompt-guide",
+  "title": "UBIST OTC 아이콘 컬러 — 블루 과밀 팔레트에서 쨍한 비블루 컬러 탐색 → 옐로그린 확정",
+  "subtitle": "UBIST · 고도화 · 2026.04 · 제품군 아이콘 팔레트 맥락",
+  "aiTags": ["Claude"],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "컬러 후보 확산",
+      "desc": "기존 아이콘 팔레트 대비 인터랙티브 스와치",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "[UBIST 제품군 아이콘 이미지 첨부]\nUBIST OTC 컬러를 바꿔야는데 Weekly Pro처럼 쨍한 컬러를 원해 블루 외에 컬러로 몇 가지 제안해줘."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "조건 추가 → 수렴",
+      "desc": "장표 사용 조건 → 그린 → 옐로그린",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "prompt": "장표(발표자료)에서도 써야 한다는 조건 추가 → 그린 계열로 좁힘 → 옐로그린 혼합 요청",
+      "images": [
+        { "label": "Before — 뮤트 베이지 OTC 아이콘", "src": "" },
+        { "label": "After — Apple Green #A2B91C 아이콘", "src": "" }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 아이콘 Apple Green #A2B91C, 덱 차트·강조는 Olive Green #65A30D 2색 전략으로 확정.\n팁: 컬러 요청엔 \"어디에 쓰이는지\"(아이콘·장표·차트)를 처음부터 같이 주면 한 번에 수렴. 기존 팔레트 이미지를 첨부해야 겹치는 색을 피해 제안함."
+        }
+      ]
+    }
+  ]
+}

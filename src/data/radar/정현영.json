@@ -1,0 +1,721 @@
+{
+  "nodeId": "4:2",
+  "author": "정현영",
+  "title": "프로젝트별 AI 스택 레이더",
+  "subtitle": "각 프로젝트가 어떤 AI 스택으로 배포까지 진행되는지 한눈에 보는 현황판 프로젝트별 어떻게 어떤 AI를 사용하는지 공유해요",
+  "columns": [
+    "연도",
+    "월",
+    "담당자",
+    "프로젝트명",
+    "현재 단계",
+    "활용 중인 AI 스킬"
+  ],
+  "rows": [
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "2월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[KIMES] 통합 브로슈어 작업"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Perplexity",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "4월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[사내 홈페이지] 웹 서브페이지 구축"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "NotebookLM",
+              "kind": "ai"
+            },
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "4월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[사내 홈페이지] 모바일 구축"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "4월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[UBIST OTC]  소개페이지"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "NotebookLM",
+              "kind": "ai"
+            },
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "5월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[유팜] 재고관리 아이콘 신규 생성"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[사내 홈페이지] 이미지 제작"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Adobe Firefly",
+              "kind": "ai"
+            },
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[사내 홈페이지] 모션 그래픽"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Adobe Firefly",
+              "kind": "ai"
+            },
+            {
+              "label": "Perplexity",
+              "kind": "ai"
+            },
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma AI",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[유팜] 의약품 통계 정보  팝업"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[BX,BI] GC메디아이 BI"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[바로바로] 도움말 센터 랜딩 페이지 에셋"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            },
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[유팜] 재고관리 아이콘 신규 생성"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "7월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[바로바로] 업데이트 내역 랜딩페이지"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Perplexity",
+              "kind": "ai"
+            },
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "8월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[사내 홈페이지] 페이지 추가 IR,팝업"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[유팜] 바로바로 위젯 디자인"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[제약] 복약안내 약관 개정 팝업"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[팀] AI 공유보드 가이드"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            },
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[클라우드DB] 브로슈어"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[의사랑] 의사랑닷컴 프로모션 배너"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "10월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[팀] 트렌드 리서치 브리핑  봇"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "footnote": "2026 정현영"
+}
