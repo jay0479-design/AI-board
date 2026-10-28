@@ -66,16 +66,36 @@ function BlockView({ block }: { block: Block }) {
   }
 }
 
-export default function ProcessCard({ card, id }: { card: ProcessCardData; id?: string }) {
+export default function ProcessCard({ card, id, onOpen }: { card: ProcessCardData; id?: string; onOpen?: (card: ProcessCardData) => void }) {
   const hasMeta = (card.metaChips && card.metaChips.length > 0) || card.statusTag || card.levelChip;
   const isRecipe = card.template === 'ai-recipe-v2';
+  const clickable = !!onOpen;
+  const open = () => onOpen?.(card);
   return (
     <article
       id={id}
-      className="flex w-full flex-col gap-5 rounded-[16px] border border-border-default bg-surface-card p-5 shadow-[var(--shadow-card-sm)] sm:p-7"
+      className={`relative flex w-full flex-col gap-5 rounded-[16px] border border-border-default bg-surface-card p-5 shadow-[var(--shadow-card-sm)] sm:p-7 ${
+        clickable ? 'cursor-pointer transition-shadow hover:border-[#b9c3e6] hover:shadow-[0_6px_20px_rgba(0,27,104,0.10)]' : ''
+      }`}
       data-node-id={card.nodeId}
+      onClick={
+        clickable
+          ? (e) => {
+              // 링크 클릭은 팝업을 열지 않는다
+              if ((e.target as HTMLElement).closest('a')) return;
+              open();
+            }
+          : undefined
+      }
+      onKeyDown={clickable ? (e) => { if (e.key === 'Enter' && e.target === e.currentTarget) open(); } : undefined}
+      tabIndex={clickable ? 0 : undefined}
+      role={clickable ? 'button' : undefined}
+      aria-label={clickable ? `${card.title} 줄글로 보기 · 복사` : undefined}
     >
-      <header className="flex flex-col gap-3">
+      {clickable && (
+        <span className="absolute right-4 top-4 rounded-full bg-surface-subtle px-2.5 py-1 text-[12px] font-medium text-text-secondary sm:right-5 sm:top-5">📋 줄글 · 복사</span>
+      )}
+      <header className={`flex flex-col gap-3 ${clickable ? 'pr-24' : ''}`}>
         {hasMeta && (
           <div className="flex flex-wrap items-center gap-2">
             {card.metaChips?.map((c) => (

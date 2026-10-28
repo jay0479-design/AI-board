@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <!-- AI Sparkle Star: 큰 별 + 작은 별 (헤더 아이콘과 동일한 모티프) -->
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFD54A"/>
+      <stop offset="1" stop-color="#F2A900"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#001B68"/>
+  <path d="M28 10 C29 22 32 27 46 30 C32 33 29 38 28 50 C27 38 24 33 10 30 C24 27 27 22 28 10 Z" fill="url(#g)"/>
+  <path d="M47 36 C47.5 41 49 43 54 44 C49 45 47.5 47 47 52 C46.5 47 45 45 40 44 C45 43 46.5 41 47 36 Z" fill="#FFE68A"/>
+</svg>

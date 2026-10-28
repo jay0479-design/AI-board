@@ -17,9 +17,9 @@ export default function HomePage() {
     <>
       <section className="container-page relative py-10 sm:py-14 lg:py-16">
         {/* 보드 소개 카드 (Figma 250:42, 1000×551, padding 36, gap 24) */}
-        <div className="card flex flex-col gap-6 p-6 sm:p-9">
+        <div className="card flex flex-col gap-6 p-6 transition-[transform,box-shadow,border-color] duration-200 ease-out hover:-translate-y-1 hover:border-[#b9c3e6] hover:shadow-[0_12px_32px_rgba(0,27,104,0.12)] sm:p-9">
           <div className="flex flex-col gap-2.5">
-            <h1 className="t-h1">AI 활용 공유 보드</h1>
+            <h1 className="t-h1">디자인팀 AI 활용 공유보드</h1>
             <p className="text-[15px] font-semibold leading-[1.5] tracking-[-0.16px] text-text-secondary sm:text-[16px]">
               팀원마다 다른 AI 활용 수준을 같은 눈높이로 맞추기 위한 보드입니다.
               <br />
@@ -43,7 +43,7 @@ export default function HomePage() {
             <ul className="flex flex-col gap-2.5">
               {PAGES.map((p) => (
                 <li key={p.n}>
-                  <Link to={p.to} className="group flex flex-col gap-1 rounded-[8px] px-1 py-1 -mx-1 transition-colors hover:bg-surface-subtle sm:flex-row sm:items-center sm:gap-3">
+                  <Link to={p.to} className="group -mx-2 flex flex-col gap-1 rounded-[8px] px-2 py-1.5 transition-colors hover:bg-accent-blue-bg sm:flex-row sm:items-center sm:gap-3">
                     <span className="flex items-center gap-3">
                       <NumberBadge n={p.n} />
                       <span className="t-title w-[200px] group-hover:text-accent-blue-text">{p.title}</span>
@@ -62,6 +62,21 @@ export default function HomePage() {
             <img src="/assets/intro/team-illustration.png" alt="디자인팀 캐릭터 일러스트" className="w-full" />
             <img src="/assets/intro/ai-sparkle.png" alt="" className="absolute -right-2 -top-10 w-[54px] rotate-[8deg]" />
           </div>
+        </div>
+
+        {/* 하단 소개 영상 — 무음 자동 재생·반복 (원본 .mov를 H.264 mp4로 변환) */}
+        <div className="card mt-8 overflow-hidden rounded-[20px] p-0 lg:mt-4">
+          <video
+            className="aspect-video w-full bg-black"
+            src="/assets/intro/intro-video.mp4"
+            poster="/assets/intro/intro-video-poster.jpg"
+            autoPlay
+            muted
+            loop
+            playsInline
+            preload="metadata"
+            aria-label="디자인팀 AI 활용 공유보드 소개 영상"
+          />
         </div>
       </section>
     </>

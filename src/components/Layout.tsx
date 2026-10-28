@@ -24,7 +24,7 @@ export default function Layout() {
         <div className="container-page flex h-14 items-center justify-between gap-4 lg:h-16">
           <NavLink to="/" className="flex items-center gap-2 whitespace-nowrap">
             <img src="/assets/intro/ai-sparkle.png" alt="" className="size-6 object-contain" />
-            <span className="text-[15px] font-bold tracking-[-0.2px] text-text-primary">GC메디아이 AI 활용 공유 보드</span>
+            <span className="text-[15px] font-bold tracking-[-0.2px] text-text-primary">디자인팀 AI 활용 공유보드</span>
           </NavLink>
           <nav className="hidden items-center gap-1 lg:flex" aria-label="페이지">
             {NAV.map((item) => (
@@ -80,8 +80,8 @@ export default function Layout() {
       </main>
       <footer className="border-t border-border-default bg-white">
         <div className="container-page flex flex-col gap-2 py-6 text-[13px] text-text-tertiary sm:flex-row sm:items-center sm:justify-between">
-          <span>GC메디아이 디자인팀 · AI 활용 인사이트 공유 보드</span>
-          <span>원본: Figma「AI 활용 공유 보드」</span>
+          <span>GC메디아이 디자인팀 · 디자인팀 AI 활용 공유보드</span>
+          <span>원본: Figma「디자인팀 AI 활용 공유보드」</span>
         </div>
       </footer>
     </div>

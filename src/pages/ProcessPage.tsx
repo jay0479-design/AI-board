@@ -1,5 +1,7 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import ProcessCard from '../components/ProcessCard';
+import CardTextModal from '../components/CardTextModal';
+import type { ProcessCard as ProcessCardData } from '../data/types';
 import { Callout, PageHeader } from '../components/Primitives';
 import { NumberBadge } from '../components/Tag';
 import { fill, type PromptLine } from '../components/PromptPanel';
@@ -48,6 +50,8 @@ function slug(author: string) {
 
 export default function ProcessPage() {
   const [active, setActive] = useState('guide');
+  const [openCard, setOpenCard] = useState<ProcessCardData | null>(null);
+  const closeCard = useCallback(() => setOpenCard(null), []);
 
   // Scroll-spy: highlight the section currently in view
   useEffect(() => {
@@ -151,13 +155,16 @@ export default function ProcessPage() {
               {g.label && <h3 className="t-h2 text-text-primary">{g.label}</h3>}
               <div className="grid grid-cols-1 items-start gap-6 lg:grid-cols-2">
                 {g.cards.map((card) => (
-                  <ProcessCard key={card.nodeId} card={card} id={`card-${card.nodeId.replace(':', '-')}`} />
+                  <ProcessCard key={card.nodeId} card={card} id={`card-${card.nodeId.replace(':', '-')}`} onOpen={setOpenCard} />
                 ))}
               </div>
             </div>
           ))}
         </AuthorSection>
       ))}
+
+      {/* 카드 클릭 → 줄글 + 복사 팝업 */}
+      <CardTextModal card={openCard} onClose={closeCard} />
     </div>
   );
 }

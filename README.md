@@ -1,4 +1,4 @@
-# GC메디아이 AI 활용 공유 보드 — 웹사이트
+# 디자인팀 AI 활용 공유보드 — 웹사이트
 
 Figma 「AI 활용 공유 보드」(`egZ9c39su3qGZLQjMvKM33`)를 Figma MCP로 분석해 React + TypeScript + Tailwind CSS v4로 구현한 반응형 웹사이트입니다.
 
@@ -57,6 +57,8 @@ public/assets/         # Figma 원본 에셋(이미지·SVG) + QA용 _figma.png 
 - 서체: Pretendard(CDN), 커버의 Noto Sans KR · Roboto · Inter는 Google Fonts.
 
 - (요청 반영) 가이드 섹션은 모든 페이지에서 기본 접힘(`GuideSection` = `<details>`)입니다.
+- (요청 반영) 보드 소개 페이지 하단에 소개 영상을 무음 자동 재생·반복으로 넣었습니다. 원본 `.mov`(HEVC)는 브라우저 호환을 위해 `ffmpeg-static`으로 H.264 mp4(1280×720, 무음)로 변환했습니다: `node -e "console.log(require('ffmpeg-static'))"`로 ffmpeg 경로를 얻은 뒤 `ffmpeg -i 원본.mov -an -vf "scale='min(1280,iw)':-2" -c:v libx264 -crf 26 -pix_fmt yuv420p -movflags +faststart public/assets/intro/intro-video.mp4`.
+- (요청 반영) 프로세스 카드를 클릭하면 카드 내용을 줄글로 보여주는 팝업(`CardTextModal`)이 열리고 「복사」 버튼으로 클립보드에 복사됩니다. 변환 규칙은 `src/lib/cardText.ts`에 있습니다.
 - (요청 반영) 질문 카드에 답변 작성 폼을 추가했습니다. 답변은 `src/lib/answers.ts`를 통해 브라우저 localStorage(`ai-board.answers.v1`)에 저장되며, 같은 브라우저에서만 보입니다. 팀 전체가 공유하려면 백엔드(예: Supabase, Notion API) 연결이 필요합니다.
 
 ## 확인이 필요한 항목
