@@ -153,6 +153,7 @@ Figma MCP가 연결돼 있으면: `create_session(fileKey)` → `get_design_cont
 - 사이트 이름은 **「디자인팀 AI 활용 공유보드」** (헤더·푸터·`<title>`·소개 카드 h1 동일).
 - 소개 카드에는 호버 효과(살짝 떠오름 + 테두리 #b9c3e6 + 그림자).
 - 맨 아래 소개 영상: `autoPlay muted loop playsInline`, 소리 없음.
+- 영상 아래 **공유 블록(`ShareBlock`)**: 배포 주소 QR(`public/assets/share/site-qr.svg`) + 주소 + 「주소 복사」 버튼. 주소 상수는 `SITE_URL`(HomePage.tsx). 저장소 이름이 바뀌면 QR·SITE_URL·VITE_BASE를 함께 갱신.
 
 **모든 페이지 공통**
 - 복사용 프롬프트는 전부 **`PromptToggle`(검정 토글, 기본 접힘)** 안에.
@@ -195,7 +196,7 @@ Figma MCP가 연결돼 있으면: `create_session(fileKey)` → `get_design_cont
 - 빌드 후 `dist/index.html`을 `dist/404.html`로 복사해 새로고침·딥링크가 동작합니다.
 - 배포 결과를 로컬에서 미리 보려면 하위 경로 빌드 후 `.claude/launch.json`의 **preview-pages** (http://localhost:4173/AI-board/).
 - 저장소가 public이라 링크를 아는 누구나 볼 수 있습니다.
-- QR 재생성: `node -e "require('qrcode').toFile('docs/site-qr.png','https://jay0479-design.github.io/AI-board/',{width:360,margin:2})"`
+- QR 재생성(docs/site-qr.png 1024px, public/assets/share/site-qr.{png,svg}): `node -e "const q=require('qrcode'),u='https://jay0479-design.github.io/AI-board/';q.toFile('docs/site-qr.png',u,{width:1024,margin:2});q.toFile('public/assets/share/site-qr.png',u,{width:512,margin:1});q.toFile('public/assets/share/site-qr.svg',u,{type:'svg',margin:1})"`
 
 ---
 

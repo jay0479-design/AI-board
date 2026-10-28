@@ -1,7 +1,39 @@
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { asset } from '../lib/asset';
+import { copyText } from '../lib/cardText';
 import { Divider } from '../components/Primitives';
 import { NumberBadge } from '../components/Tag';
+
+/** 배포 주소 — 누구나 접속 가능한 GitHub Pages (저장소 이름이 바뀌면 함께 수정) */
+export const SITE_URL = 'https://jay0479-design.github.io/AI-board/';
+
+/** 하단 공유 블록: QR + 주소 + 복사 버튼 */
+function ShareBlock() {
+  const [copied, setCopied] = useState(false);
+  const onCopy = async () => {
+    const ok = await copyText(SITE_URL);
+    setCopied(ok);
+    if (ok) window.setTimeout(() => setCopied(false), 1800);
+  };
+  return (
+    <div className="card mt-6 flex flex-col items-center gap-5 p-6 sm:flex-row sm:items-center sm:gap-8 sm:p-7">
+      <img src={asset('assets/share/site-qr.svg')} alt="사이트 접속 QR 코드" width={160} height={160} className="size-[160px] shrink-0 rounded-[12px] border border-surface-divider bg-white p-2" />
+      <div className="flex min-w-0 flex-1 flex-col items-center gap-2 text-center sm:items-start sm:text-left">
+        <p className="t-title text-text-primary">휴대폰으로도 열어 보세요</p>
+        <p className="t-body text-text-secondary">QR을 찍거나 아래 주소로 들어가면 누구나 볼 수 있어요. 링크는 자유롭게 공유해 주세요.</p>
+        <div className="mt-1 flex w-full max-w-full flex-col items-center gap-2 sm:flex-row">
+          <a href={SITE_URL} className="t-body-md min-w-0 max-w-full truncate rounded-full bg-surface-subtle px-4 py-2 text-text-primary hover:bg-surface-divider">
+            {SITE_URL.replace(/^https?:\/\//, '').replace(/\/$/, '')}
+          </a>
+          <button type="button" onClick={onCopy} className="shrink-0 rounded-full bg-black px-4 py-2 text-[14px] font-medium text-white hover:bg-text-secondary">
+            {copied ? '✓ 복사됨' : '📋 주소 복사'}
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 /* Figma: 페이지 "👋 0. 보드 소개" (커버 245:1772는 요청으로 제외) */
 
@@ -79,6 +111,9 @@ export default function HomePage() {
             aria-label="디자인팀 AI 활용 공유보드 소개 영상"
           />
         </div>
+
+        {/* 공유 블록 — 배포 주소 QR + 주소 복사 */}
+        <ShareBlock />
       </section>
     </>
   );
