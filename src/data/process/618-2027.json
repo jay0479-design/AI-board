@@ -5,7 +5,10 @@
   "template": "skill-prompt-guide",
   "title": "랩뷰어 · AI 작업 규칙·용어 문서화 + 보관/변경 이력 관리",
   "subtitle": "지시문·용어·규칙을 MD 문서로 모아 두고 기획 버전마다 갱신 (2026.09–10 · Claude Code·Figma MCP)",
-  "aiTags": ["Claude Code", "Figma MCP"],
+  "aiTags": [
+    "Claude Code",
+    "Figma MCP"
+  ],
   "blocks": [
     {
       "type": "step",

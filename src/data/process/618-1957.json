@@ -5,7 +5,10 @@
   "template": "skill-prompt-guide",
   "title": "랩뷰어 v1.3 · 화면설계서 → DS 기반 HTML 프로토타입 + 확인 가이드",
   "subtitle": "기획·DS 학습 → 화면별 HTML 구현 → 버전 반영·확인 가이드로 이관 (2026.09–10 · Claude Code·Figma MCP)",
-  "aiTags": ["Claude Code", "Figma MCP"],
+  "aiTags": [
+    "Claude Code",
+    "Figma MCP"
+  ],
   "blocks": [
     {
       "type": "step",
@@ -27,9 +30,16 @@
       "boxLabel": "PROMPT",
       "prompt": "[v1.3 링크] v1.3 기획 내용에서 업데이트 된 사항 있는지 확인해줘\nPLANNING_SPEC.md에 반영하고 html에도 적용해줘\n디자인 산출물 공유 시에 활용할 \"확인 가이드\"를 제작하고 싶어. 기획서 기반으로 해당 내용을 바로 확인할 수 있는 로직이었으면 좋겠어.\n현재 기준 대표페이지 몇개 스크린샷으로 캡쳐해서 저장해줘. 개발 쪽에서 활용할 개발 계획서에 활용될 용도야",
       "images": [
-        { "label": "대표 화면 (v1.3 프로토타입) · 검사결과 뷰어 / 퀵바", "src": "/assets/process/618-1957/1.png", "alt": "뷰어" },
-        { "src": "/assets/process/618-1957/2.png", "alt": "퀵바" },
-        { "label": "퀵바 · 검사별 보기 + 그래프 같이 보기", "src": "/assets/process/618-1957/3.png", "alt": "검사별 보기 그래프" }
+        {
+          "label": "대표 화면 (v1.3 프로토타입) · 검사결과 뷰어 / 퀵바",
+          "src": "assets/process/618-1957/1.png",
+          "alt": "대표 화면 (v1.3 프로토타입) · 검사결과 뷰어 / 퀵바"
+        },
+        {
+          "label": "퀵바 · 검사별 보기 + 그래프 같이 보기",
+          "src": "assets/process/618-1957/2.png",
+          "alt": "퀵바 · 검사별 보기 + 그래프 같이 보기"
+        }
       ]
     },
     {

@@ -5,7 +5,10 @@
   "template": "skill-prompt-guide",
   "title": "의사랑AI 랜딩 개편안 · 기획 HTML → DS 기반 디자인 산출물 + 확인 가이드",
   "subtitle": "DS 학습·토큰 교체 → 페이지별 시안 반영 → 스토리보드·확인 가이드 전달 (2026.10 · Claude Code·Figma MCP)",
-  "aiTags": ["Claude Code", "Figma MCP"],
+  "aiTags": [
+    "Claude Code",
+    "Figma MCP"
+  ],
   "blocks": [
     {
       "type": "step",
@@ -27,8 +30,15 @@
       "boxLabel": "PROMPT",
       "prompt": "\"제품소개\" 페이지를 디자인 스킬(taste-skill · ui-ux-pro-max) 참고해서 개선안을 제안해줘. 홈페이지와의 연결성 포함. 1단계, 2단계 시안으로 보여줘\n지금 화면 기준으로 디자인 스킬 활용해서 점검해줘 → 1, 2, 4번 수정해줘\n매뉴얼 페이지도 개선안 제안해줘. 다만 기획안 html의 화면을 그대로 or 아주 유사하게 들어가야해. [DS Figma 링크] 이미지가 아닌 디자인대로 넣는 것도 고려\nB안으로 적용하고 깃헙에 푸시해줘",
       "images": [
-        { "label": "Before · 기획안 원본 (09.29)", "src": "/assets/process/660-197/1.png", "alt": "Before" },
-        { "src": "/assets/process/660-197/2.png", "alt": "After" }
+        {
+          "label": "Before · 기획안 원본 (09.29)",
+          "src": "assets/process/660-197/1.png",
+          "alt": "Before · 기획안 원본 (09.29)"
+        },
+        {
+          "src": "assets/process/660-197/2.png",
+          "alt": "After"
+        }
       ]
     },
     {

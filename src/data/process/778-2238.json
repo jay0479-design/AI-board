@@ -1,0 +1,59 @@
+{
+  "nodeId": "778:2238",
+  "author": "이민영",
+  "order": 5,
+  "template": "skill-prompt-guide",
+  "title": "사내의원 진료·접수 고도화 · 개선 방향과 대안을 AI와 같이 정리",
+  "subtitle": "개선 과제마다 방향과 대안을 받아 Figma에서 디자인 (2026.03~04 · Claude)",
+  "aiTags": [
+    "Claude",
+    "Gemini"
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "개선 과제마다 방향과 대안 정리",
+      "desc": "대기리스트 드래그, 수납정보 시인성 등",
+      "promptLabel": "제안 요청 프롬프트 (요지)",
+      "boxLabel": "PROMPT",
+      "prompt": "[화면 캡처] 사내의원 접수 화면이야. 이전 버전이 색·글꼴·사용성 때문에 불편하다는 의견이 있어서 고도화하려고 해. 문제가 되는 부분을 짚어 주고, 개선 방향과 대안을 2~3개씩 제안해 줘."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "항목별로 제안 받고 Figma에서 디자인",
+      "desc": "예약 목록·예약 카드·처방메모 표시 등",
+      "promptLabel": "항목별 프롬프트 (요지)",
+      "boxLabel": "PROMPT",
+      "prompt": "[화면 캡처] 예약 목록 표가 한눈에 잘 안 읽혀. 줄 구분, 글자 크기·굵기, 강조 색을 어떻게 바꾸면 좋을지 제안해 줘.",
+      "images": [
+        {
+          "label": "사내의원 접수 화면 (Figma)",
+          "src": "assets/process/778-2238/1.png",
+          "alt": "사내의원 접수 화면 (Figma)"
+        },
+        {
+          "label": "접수 수납정보 영역 (Figma)",
+          "src": "assets/process/778-2238/2.png",
+          "alt": "접수 수납정보 영역 (Figma)"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 3/5~4/16 개선 21건 중 10건에 AI 활용. 대기리스트 드래그 안내, 수납정보 지시오더 시인성, 예약 목록·예약 카드 가독성, 처방메모 라벨 색, 보험청구 사전점검 등.\n팁: 캡처와 함께 왜 바꾸려는지(색·글꼴·사용성)를 먼저 말하면 그 기준으로 제안이 나와요. 대안을 2~3개씩 받아 비교하면 고르기 쉬워요."
+        }
+      ]
+    }
+  ]
+}

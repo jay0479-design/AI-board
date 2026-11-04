@@ -5,7 +5,9 @@
   "template": "skill-prompt-guide",
   "title": "UBIST OTC 아이콘 컬러 — 블루 과밀 팔레트에서 쨍한 비블루 컬러 탐색 → 옐로그린 확정",
   "subtitle": "UBIST · 고도화 · 2026.04 · 제품군 아이콘 팔레트 맥락",
-  "aiTags": ["Claude"],
+  "aiTags": [
+    "Claude"
+  ],
   "blocks": [
     {
       "type": "step",
@@ -13,10 +15,12 @@
       "badgeTone": "blue",
       "name": "컬러 후보 확산",
       "desc": "기존 아이콘 팔레트 대비 인터랙티브 스와치",
-      "promptLabel": "Prompt (입력 원문)",
+      "promptLabel": "컬러 탐색 프롬프트",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
-      "prompt": "[UBIST 제품군 아이콘 이미지 첨부]\nUBIST OTC 컬러를 바꿔야는데 Weekly Pro처럼 쨍한 컬러를 원해 블루 외에 컬러로 몇 가지 제안해줘."
+      "link": {
+        "label": "전체 프롬프트 · Notion ↗"
+      },
+      "prompt": "입력: UBIST 제품군 아이콘 이미지(기존 팔레트).\n작업: UBIST OTC 아이콘에 쓸 컬러를 블루 계열을 제외한 쨍한 톤으로 3~5안 제안해 주세요. Weekly Pro 수준의 채도를 기준으로 합니다.\n원칙: 기존 제품군 아이콘과 겹치는 색은 제외합니다.\n출력: 기존 아이콘 옆에 적용된 모습을 바로 비교할 수 있는 스와치."
     },
     {
       "type": "step",
@@ -24,14 +28,12 @@
       "badgeTone": "blue",
       "name": "조건 추가 → 수렴",
       "desc": "장표 사용 조건 → 그린 → 옐로그린",
-      "promptLabel": "Prompt (입력 원문)",
+      "promptLabel": "조건 반영·수렴 프롬프트",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
-      "prompt": "장표(발표자료)에서도 써야 한다는 조건 추가 → 그린 계열로 좁힘 → 옐로그린 혼합 요청",
-      "images": [
-        { "label": "Before — 뮤트 베이지 OTC 아이콘", "src": "" },
-        { "label": "After — Apple Green #A2B91C 아이콘", "src": "" }
-      ]
+      "link": {
+        "label": "전체 프롬프트 · Notion ↗"
+      },
+      "prompt": "추가 조건: 발표 장표·차트에서도 같은 컬러를 사용합니다.\n작업: 그린 계열로 범위를 좁히고, 옐로그린을 섞은 안까지 포함해 아이콘용과 장표 강조용 2색 조합으로 정리해 주세요.\n출력: 확정 HEX 값과 용도(아이콘 / 차트·강조)별 적용 기준."
     },
     {
       "type": "section",
@@ -42,7 +44,7 @@
       "boxes": [
         {
           "tone": "subtle",
-          "text": "결과: 아이콘 Apple Green #A2B91C, 덱 차트·강조는 Olive Green #65A30D 2색 전략으로 확정.\n팁: 컬러 요청엔 \"어디에 쓰이는지\"(아이콘·장표·차트)를 처음부터 같이 주면 한 번에 수렴. 기존 팔레트 이미지를 첨부해야 겹치는 색을 피해 제안함."
+          "text": "결과: 아이콘 Apple Green #A2B91C, 덱 차트·강조 Olive Green #65A30D의 2색 전략으로 확정했습니다.\n실무 팁: ① 컬러 요청에는 사용처(아이콘·장표·차트)를 처음부터 함께 적으면 한 번에 수렴합니다. ② 기존 팔레트 이미지를 첨부해야 겹치는 색을 피해 제안합니다."
         }
       ]
     }

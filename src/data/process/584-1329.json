@@ -6,7 +6,10 @@
   "template": "skill-prompt-guide",
   "title": "의사랑 CRM — 디자인 시스템 레이어 정리 → MD 추출 → React 구현 테스트",
   "subtitle": "의사랑 CRM · 고도화 · 2026.04–05 · 디자인-투-코드 파이프라인",
-  "aiTags": ["Claude Code", "Figma MCP"],
+  "aiTags": [
+    "Claude Code",
+    "Figma MCP"
+  ],
   "blocks": [
     {
       "type": "step",
@@ -16,8 +19,7 @@
       "desc": "디자인 시스템 레이어 정리 후 화면 디자인 MD 추출",
       "promptLabel": "Prompt (입력 원문)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
-      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요."
+      "prompt": "디자인 시스템 마크다운이 필요합니다.\n피그마 링크를 보고 명확한 디자인 시스템 md 파일을 생성해 주세요.\nComponents, Page Components, Variables, Style(Text style, Effect styles)\n오차 없이 반드시 스타일 유지 해주세요."
     },
     {
       "type": "step",
@@ -27,13 +29,18 @@
       "desc": "화면별 React 구현 + 워크플로우용 MD 제작",
       "promptLabel": "Prompt (입력 원문)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
-      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요.",
+      "prompt": "메시지 보내기 피그마 메뉴의 레이아웃 스펙 정의가 필요해.\nMCP를 참고해서 각 Case 별로 뽑아 너에게 구현을 요청할거야. 순서대로 진행할게.\n[02-10-T10-C11] 조건검색 결과 있음\nImplement this design from Figma. @[피그마 노드 링크]",
       "images": [
-        { "label": "Before — 피그마 화면", "src": "" },
-        { "label": "After — React 구현 화면", "src": "" },
-        { "label": "이미지 3", "src": "" },
-        { "label": "이미지 4", "src": "" }
+        {
+          "label": "Before — 피그마 화면",
+          "src": "assets/process/584-1329/1.png",
+          "alt": "Before — 피그마 화면"
+        },
+        {
+          "label": "After — React 구현 화면",
+          "src": "assets/process/584-1329/2.png",
+          "alt": "After — React 구현 화면"
+        }
       ]
     },
     {
@@ -45,7 +52,7 @@
       "boxes": [
         {
           "tone": "subtle",
-          "text": "결과: 화면 디자인 MD화 → React 구현 테스트 완료, 이후 워크플로우 적용용 MD 파일로 정리.\n팁: 확인 필요"
+          "text": "결과: 화면 디자인 MD화 → React 구현 테스트 완료, 이후 워크플로우 적용용 MD 파일로 정리.\n팁: 73개 전부 말고 대표 케이스만 Case 단위로 구현하고, 결과물은 피그마 원본과 사람이 직접 대조해 검증하세요."
         }
       ]
     }

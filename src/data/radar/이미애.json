@@ -552,7 +552,7 @@
           "text": "이미애"
         },
         {
-          "text": "[BX,BI] 컨셉·로고·심볼 시안 + 하위 메뉴 가이드"
+          "text": "[BI/BX] 컨셉·로고·심볼 시안 + 하위 메뉴 가이드"
         },
         {
           "tags": [
@@ -628,7 +628,7 @@
           "text": "이미애"
         },
         {
-          "text": "[클라우드DB백업] 유효전환 팝업 HTML + 브로슈어"
+          "text": "[클라우드DB백업] 유료전환 팝업 HTML + 브로슈어"
         },
         {
           "tags": [
@@ -719,15 +719,118 @@
             {
               "label": "Claude Code",
               "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "11월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[클라우드DB백업] 유료전환 팝업 HTML"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
             },
             {
-              "label": "ChatGPT",
+              "label": "Claude Code",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "11월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[의사랑] 실시간 의료이용 팝업 및 툴바 아이콘 3종"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "11월"
+        },
+        {
+          "text": "이미애"
+        },
+        {
+          "text": "[BI/BX] 케어포스 실행 아이콘 시안 제작"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Claude Code",
               "kind": "ai"
             }
           ]
         }
       ]
     }
-  ],
-  "footnote": "2026 이미애"
+  ]
 }

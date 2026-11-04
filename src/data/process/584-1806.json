@@ -2,11 +2,14 @@
   "nodeId": "584:1806",
   "author": "이미애",
   "group": "Group · ④ 프로세스",
-  "order": 11,
+  "order": 12,
   "template": "skill-prompt-guide",
   "title": "Claude·Manus로 디자인 화면 구조 검토 — AI native 워크플로우 리서치",
   "subtitle": "의사랑 클라우드DB백업 · 리서치 · 2026.05 · 프로세스",
-  "aiTags": ["Claude", "Manus"],
+  "aiTags": [
+    "Claude",
+    "Manus"
+  ],
   "blocks": [
     {
       "type": "step",
@@ -16,8 +19,10 @@
       "desc": "AI 워크플로우 적용 자료 조사",
       "promptLabel": "Prompt (입력 원문)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
-      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요."
+      "link": {
+        "label": "전체 프롬프트 · Notion ↗"
+      },
+      "prompt": "AI native 워크플로우로 기획자/디자이너/개발자가 함께 진행해야 해.\n워크플로우 회의 예정인데 단계별로 어떤 것부터 해야 하는지 알려 줘.\n디자이너가 프론트 영역까지 하게 된다면,\n피그마와 클로드를 함께 사용하는 방향으로 가면 돼? 가이드 자세히 알려 줘."
     },
     {
       "type": "step",
@@ -27,11 +32,21 @@
       "desc": "Claude·Manus로 화면 구조 검토 후 개발팀 리뷰",
       "promptLabel": "Prompt (입력 원문)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
-      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요.",
+      "link": {
+        "label": "전체 프롬프트 · Notion ↗"
+      },
+      "prompt": "[Claude] 첨부한 화면설계서·정책 기반으로, Manus에서 디자인이 명확하게 나오게 요구사항 정리해 줘.\n[Manus] 첨부 문서의 화면 1(에이전트 메인)을 디자인해줘.\n10가지 상태 variant를 한 페이지에 그리드로 배치해서\n디자인 리뷰용 보드 형태로 만들어줘. 보수적·안정감 톤을 유지해줘.",
       "images": [
-        { "label": "Before — 기존 화면 구조", "src": "" },
-        { "label": "After — AI 검토 반영 구조", "src": "" }
+        {
+          "label": "Before — 마누스로 초안 제작",
+          "src": "assets/process/584-1806/1.png",
+          "alt": "Before — 마누스로 초안 제작"
+        },
+        {
+          "label": "After — AI 검토 반영 구조",
+          "src": "assets/process/584-1806/2.png",
+          "alt": "After — AI 검토 반영 구조"
+        }
       ]
     },
     {
@@ -43,7 +58,7 @@
       "boxes": [
         {
           "tone": "subtle",
-          "text": "결과: Claude·Manus로 화면 구조 검토 → 개발팀과 AI-Native 워크플로우 리뷰 진행.\n팁: 확인 필요"
+          "text": "결과: Claude·Manus로 화면 구조 검토 → 개발팀과 AI-Native 워크플로우 리뷰 진행.\n팁: AI 시안 도구엔 \"예쁘게\" 대신 톤·상태 매트릭스·체크리스트를 담은 md 요구사항을 통째로 첨부하세요. 결과가 훨씬 일정해집니다."
         }
       ]
     }

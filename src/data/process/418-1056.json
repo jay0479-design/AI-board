@@ -5,7 +5,11 @@
   "template": "skill-prompt-guide",
   "title": "UBIST OTC 소개페이지 · 아이콘 16종 + 메인 비주얼 제작",
   "subtitle": "기획안 → NotebookLM 키워드 정제 → Claude Code SVG 아이콘 16종 → Figma 임포트 → Figma AI로 메인 3D 보강",
-  "aiTags": ["NotebookLM", "Claude Code", "Figma AI"],
+  "aiTags": [
+    "NotebookLM",
+    "Claude Code",
+    "Figma AI"
+  ],
   "blocks": [
     {
       "type": "step",
@@ -15,7 +19,10 @@
       "desc": "기획안 → NotebookLM → Claude Code SVG 16종 → Figma 임포트",
       "promptLabel": "Claude Code 아이콘 프롬프트 (NotebookLM 키워드 첨부)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://www.notion.so/Team-Ubist-351e60cf04cc80eab4aeffd38778e4e1" },
+      "link": {
+        "label": "전체 프롬프트 · Notion ↗",
+        "url": "https://www.notion.so/Team-Ubist-351e60cf04cc80eab4aeffd38778e4e1"
+      },
       "prompt": "NotebookLM 요청: \"섹션별 핵심 메시지와 시각화 키워드를 추출해달라\" → 키워드 묶음을 아래에 첨부\n첨부한 키워드를 기반으로 아이콘 16종을 SVG로 제안.\n컨셉 키워드: [NotebookLM에서 추출한 핵심어]\n시각 톤: 미니멀 · 라인 아이콘 · 둥근 끝(rounded cap)\n규격: 70×70 viewBox, 스트로크 2px, 그리드 정렬, 상하좌우 여백 1px\n조건: #22C55E, #0088FF 색·2개 라인 두께로 통일, 한 세트 내 시각 무게 일관성 유지\n출력: SVG 코드만, 각 아이콘 위에 // [이름] 주석"
     },
     {
@@ -26,10 +33,17 @@
       "desc": "외주 3D 시안을 Figma AI로 톤·구도 보정 → 변형안 비교",
       "promptLabel": "Figma AI 작업 내용 (요청 사항 + 시도한 보정)",
       "boxLabel": "TASK",
-      "link": { "label": "전체 프롬프트 · Notion ↗", "url": "https://www.notion.so/Team-Ubist-351e60cf04cc80eab4aeffd38778e4e1" },
+      "link": {
+        "label": "전체 프롬프트 · Notion ↗",
+        "url": "https://www.notion.so/Team-Ubist-351e60cf04cc80eab4aeffd38778e4e1"
+      },
       "prompt": "요청: [판매·소비자·가격] 세 아이콘을 삼각형 또는 가로로 나란히 배치, 중앙에 UBIST OTC 로고 또는 데이터 아이콘\n- 톤 일관성 보정: 배경·오브젝트 컬러 매칭\n- 구도 재배치 및 배경 정돈\n- 같은 시안으로 변형안 3~4개를 빠르게 만들어 비교 → 아이콘 3종으로 제안(간략본)",
       "images": [
-        { "label": "After · Claude Code 아이콘 + Figma AI 보강 결과", "src": "/assets/process/418-1056/1.png", "alt": "UBIST OTC 소개페이지 메인 비주얼 변형안 4종" }
+        {
+          "label": "After · Claude Code 아이콘 + Figma AI 보강 결과",
+          "src": "assets/process/418-1056/1.png",
+          "alt": "After · Claude Code 아이콘 + Figma AI 보강 결과"
+        }
       ]
     },
     {

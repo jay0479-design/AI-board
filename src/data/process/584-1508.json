@@ -5,33 +5,41 @@
   "order": 5,
   "template": "skill-prompt-guide",
   "title": "클라우드DB백업 신규 오픈 안내 — 유효전환 팝업 HTML 직접 제작",
-  "subtitle": "의사랑 클라우드DB백업 · 운영 · 2026.09 · 팝업",
-  "aiTags": ["Claude Code"],
+  "subtitle": "의사랑 클라우드DB백업 · 운영 · 2026.11 · 팝업",
+  "aiTags": [
+    "Claude"
+  ],
   "blocks": [
     {
       "type": "step",
       "badge": "STEP 1",
       "badgeTone": "blue",
       "name": "팝업 시안",
-      "desc": "신규 오픈 안내 문구·레이아웃 구성",
+      "desc": "기획안 분석 · HTML 1개 + 상태 스위치 구성",
       "promptLabel": "Prompt (입력 원문)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
-      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요."
+      "prompt": "피그마 기획서인데 1. 공지팝업 사용자 영역만 보면 돼. 기획안 수정 및 편집 금지하고, 기획안 내용 보고 팝업 디자인이 필요해.\n개발자한테는 html 주기로 했고, 케이스별로 줘도 되고 9~11월·12월 신청고객 분리해서 줘도 돼. 어떻게 주는 게 좋은지 분석 후 말해줘.\n→ html 1개 + 상태 스위치로 할게. 디자인 스타일은 신규오픈 html 참고해서 스타일 및 아이콘 컴포넌트 참고했으면 좋겠어."
     },
     {
       "type": "step",
       "badge": "STEP 2",
       "badgeTone": "blue",
-      "name": "HTML 생성 · 전달",
-      "desc": "팝업 HTML 코드 생성 후 전달",
+      "name": "단계별 수정 · 전달",
+      "desc": "화면별 CSS 미세 조정 → 최악 케이스 높이 검증 → 폴더 분리 전달",
       "promptLabel": "Prompt (입력 원문)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
-      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요.",
+      "prompt": "우선 전체적으로 다 하지 말고, 단계적으로 끊고 가자. 일단 스타일부터 먼저 시작하자.\n첨부한 기획안을 보면 UI가 다소 달라. 버튼도 크게 있어야 하는데 우측에 작게 있고.\n일단 기획안과 동일한 UI로 첫장 그려줘. 단계별로 가자.\n(이후 화면별로 CSS 값 직접 지정 — 예: .usage { padding: 16px 16px; } css 수정해줘)",
       "images": [
-        { "label": "Before — 팝업 시안", "src": "" },
-        { "label": "After — HTML 팝업", "src": "" }
+        {
+          "label": "Before — 기획 와이어프레임",
+          "src": "assets/process/584-1508/1.png",
+          "alt": "Before — 기획 와이어프레임"
+        },
+        {
+          "label": "After — HTML 팝업",
+          "src": "assets/process/584-1508/2.png",
+          "alt": "After — HTML 팝업"
+        }
       ]
     },
     {
@@ -43,7 +51,7 @@
       "boxes": [
         {
           "tone": "subtle",
-          "text": "결과: 유효전환 팝업 HTML 제작 완료.\n팁: 확인 필요"
+          "text": "결과: HTML 1개(상태 스위치 · 14개 케이스)로 기획·사업기획 컨펌 → 에이전트 웹뷰에 그대로 적용, 개발 요청으로 HTML / CSS / Fonts 폴더 분리 전달.\n팁: 한 번에 다 만들지 말고 화면 단위로 끊고, 미세 조정은 CSS 값을 직접 지정하면 빠르다. 조건이 많은 팝업은 최악 케이스 높이부터 측정할 것."
         }
       ]
     }

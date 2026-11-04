@@ -5,7 +5,11 @@
   "template": "skill-prompt-guide",
   "title": "AI 활용 공유보드 제작 프로세스 가이드",
   "subtitle": "컴포넌트 시스템 구축 → 실사용 피드백 반복 개선 (2026.09 · ChatGPT·Claude·Figma MCP)",
-  "aiTags": ["Claude Code", "Figma MCP", "ChatGPT"],
+  "aiTags": [
+    "Claude Code",
+    "Figma MCP",
+    "ChatGPT"
+  ],
   "blocks": [
     {
       "type": "step",

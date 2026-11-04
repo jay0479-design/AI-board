@@ -1,0 +1,60 @@
+{
+  "nodeId": "779:2332",
+  "author": "이미애",
+  "group": "Group · ② 팝업·아이콘",
+  "order": 7,
+  "template": "skill-prompt-guide",
+  "title": "실시간 의료이용 관리제도 CT·MRI 대응 — 조회·제출 / 삭제 팝업 HTML 제작",
+  "subtitle": "의사랑 EMR 웹뷰 · 운영 · 2026.11 · 팝업",
+  "aiTags": [
+    "Claude",
+    "Figma MCP"
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "기획 검토 · 팝업 시안",
+      "desc": "기획안·Description 검토 → DS 피그마 직접 참조 → HTML 1개 + Case 리모콘",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "prompt": "기획안이야. 디자인이 필요한 화면은 조회·제출 팝업, 재진입, 삭제 팝업(환자 미선택 / 특정 환자)이고 토스트와 모달도 필요해.\n기획안 꼼꼼히 살펴보고 디자인 이거만 필요한게 맞는지 확인해 줘. 디스크립션도 꼼꼼히. 단, 기획안은 절대 수정 및 편집은 금지해.\n(규칙) 피그마 변수에 있는 값만 사용하고, 없는 값은 임의로 만들지 말고 질문한다.\n→ 메인 A 조회·제출 팝업 하나 디자인 만들어 줘. 디자인 화면 하나 잡고 베리치면 될 것 같아. html로 디자인 제작 해 줘."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "단계별 수정 · 전달",
+      "desc": "CSS 값 직접 지정 → Case·상태 추가 → 폰트 내장 단일 HTML 전달",
+      "promptLabel": "Prompt (입력 원문)",
+      "boxLabel": "PROMPT",
+      "prompt": ".badge--md { padding: 4px 6px; } 시스템 있으면 적용해주고\n기획안에 있는 # 삭제 팝업 - (환자 미선택 상태) 디자인 화면 만들어 줘. case 추가해서.\n보니까 성공 시 완료 토스트 표시+팝업 자동 종료 이런게 있던데 팝업들도 케이스별로 추가 해 줘.\n프리텐다드 폰트 없는 사람들도 보이는거지? 무조건 보이게 해야해.",
+      "images": [
+        {
+          "label": "Before — 기획 와이어프레임",
+          "src": "assets/process/779-2332/1.png",
+          "alt": "Before — 기획 와이어프레임"
+        },
+        {
+          "label": "After — HTML 팝업",
+          "src": "assets/process/779-2332/2.png",
+          "alt": "After — HTML 팝업"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: HTML 1개(Case 3종 · 상태 13개)로 기획 컨펌 → 개발자 확인 후 폰트 내장 단일 HTML 그대로 전달.\n팁: DS 링크를 피그마에서 직접 읽고 \"변수에 없는 값은 질문\" 규칙을 걸면 임의 값이 줄어든다. 화면 하나 확정 후 Case로 베리에이션을 늘리면 수정이 한 번에 반영된다."
+        }
+      ]
+    }
+  ]
+}

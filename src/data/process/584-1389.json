@@ -4,9 +4,11 @@
   "group": "Group · ① 프로젝트 (기획→디자인→구현)",
   "order": 3,
   "template": "skill-prompt-guide",
-  "title": "온라인 서비스센터 — 요구사항·VOC → 컨셉 정의서·IA·와이어프레임 기획",
+  "title": "온라인 서비스센터 — 요구사항·VOC → 컨셉 정의서· 기획",
   "subtitle": "의사랑닷컴 온라인 서비스센터 · 신규 기획 · 2026.04–08 · 디자이너의 AI 기획",
-  "aiTags": ["Claude"],
+  "aiTags": [
+    "Claude"
+  ],
   "blocks": [
     {
       "type": "step",
@@ -16,8 +18,7 @@
       "desc": "VOC·요구사항·변경내역서 → 컨셉 정의서, IA(as-is/to-be)",
       "promptLabel": "Prompt (입력 원문)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
-      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요."
+      "prompt": "1차 마일스톤 짰는데 1~4번 순서대로 진행할까 해. 첫 번째 Task 진행하자.\n① 시나리오·기능 정의 ② IA 초안 ③ BIZ Flow ④ 와이어프레임(Lo-Fi)\n컨셉 및 시나리오 정의서가 필요해. 첨부한 PRD 기반으로 초안 만들어줘."
     },
     {
       "type": "step",
@@ -27,11 +28,18 @@
       "desc": "메인·검색결과 와이어프레임 → 기능정의서·화면 구조",
       "promptLabel": "Prompt (입력 원문)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
-      "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요.",
+      "prompt": "메인 와이어프레임 HTML에 기획 설명 박스 추가해줘.\n검색결과 페이지에 쓴 노란 노트 스타일 그대로, 섹션 오른쪽에 두고 툴바에서 ON/OFF 토글.\n문체는 체언 종결로. 예) \"마우스 올리면 하위 메뉴 펼쳐짐\"\nFAQ·뉴스를 나란히 둔 이유는 엑셀 데이터 기준 트래픽 최상위라고 적어줘.",
       "images": [
-        { "label": "Before — 요구사항·VOC 원문", "src": "" },
-        { "label": "After — 컨셉 정의서·와이어프레임", "src": "" }
+        {
+          "label": "Before — 요구사항·VOC분석 md파일",
+          "src": "assets/process/584-1389/1.png",
+          "alt": "Before — 요구사항·VOC분석 md파일"
+        },
+        {
+          "label": "After — 컨셉 정의서·기획",
+          "src": "assets/process/584-1389/2.png",
+          "alt": "After — 컨셉 정의서·기획"
+        }
       ]
     },
     {
@@ -43,7 +51,7 @@
       "boxes": [
         {
           "tone": "subtle",
-          "text": "결과: 컨셉 정의서, IA, 메인·검색 와이어프레임, 기능정의서까지 기획 산출물 작성 → MVP 디자인으로 연결.\n팁: 확인 필요"
+          "text": "결과: 컨셉 정의서 · IA(As-Is/To-Be) · 메인/검색결과 와이어프레임 · 기능정의서까지 기획 산출물 작성 → MVP 디자인으로 연결.\n팁: 마일스톤을 먼저 주고 \"1번부터 순서대로\"로 끊어서 시키면 산출물이 섞이지 않음. 문체 규칙(체언 종결)은 첫 턴에 예문으로 고정해두면 이후 재지시 불필요."
         }
       ]
     }

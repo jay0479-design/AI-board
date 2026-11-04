@@ -70,17 +70,17 @@ src/
     CardTextModal.tsx      # 카드 줄글 팝업 + 📋 복사 버튼
   pages/
     HomePage.tsx           # 소개 카드(호버 효과) · 페이지 목록 링크 · 팀 일러스트 · 하단 소개 영상(무음 자동재생)
-    ProcessPage.tsx        # 가이드 섹션 + 작성자 섹션 4개(스크롤 스파이 앵커 바) + CardTextModal
+    ProcessPage.tsx        # 가이드 섹션 + 작성자 섹션 5개(스크롤 스파이 앵커 바) + CardTextModal
     InsightsPage.tsx       # 가이드(채우기/트렌드 분석 프롬프트 토글) + 정현영 인사이트 보드
     KnowhowPage.tsx        # Showcase 그라데이션 + Pro-Tip 카드
     QuestionsPage.tsx      # 가이드 + 질문 카드 2장 + 답변 작성 폼(AnswerForm)
-    RadarPage.tsx          # 작성자 탭 4개 + 표(min-w 1100)
+    RadarPage.tsx          # 작성자 탭 5개 + 표(min-w 1100)
   data/
     types.ts               # ProcessCard / Block / Box / ImageItem / RadarTable 타입 (아래 4절 참고)
     process/
-      index.ts             # import.meta.glob으로 *-*.json 카드 자동 수집, SECTION_ORDER(정현영→이주희→이미애→하소진)
+      index.ts             # import.meta.glob으로 *-*.json 카드 자동 수집, SECTION_ORDER(정현영→이주희→이미애→하소진→이민영)
       index.<작성자>.json   # 작성자별 카드 순서 (배열 또는 {sectionTitle, groups:[{label, files}]})
-      <nodeId>.json        # 카드 1장 = 파일 1개 (Figma 노드 ID, 예: 446-1214.json) — 총 36장
+      <nodeId>.json        # 카드 1장 = 파일 1개 (Figma 노드 ID, 예: 446-1214.json) — 총 42장 (2026-11-04 재추출)
     radar/
       index.json           # 작성자 탭 순서
       <작성자>.json         # 레이더 표 1개
@@ -143,6 +143,8 @@ docs/site-qr.png           # 배포 주소 QR
 
 ### 4-4. Figma에서 새 카드 뽑아오기
 Figma MCP가 연결돼 있으면: `create_session(fileKey)` → `get_design_context(nodeId)` 로 구조를 읽고 위 JSON 스키마로 옮김 → 이미지는 `download_assets`로 `public/assets/process/`에 저장. QA용으로 `get_screenshot` 결과를 `_figma.png`로 같이 두는 관례입니다.
+
+**2026-11-04에 쓴 일괄 재추출 방식(권장):** 카드가 모두 템플릿 `53:4`의 인스턴스이므로 `use_figma`로 `instance.componentProperties`(Title · UI Construction Prompt · Visual Prompt · Tips & Result · 노션 링크 Boolean)와 텍스트 레이어(Section Title/Subtitle · Prompt Label · Lang · Caption · Link Label의 hyperlink), `Label / Tag` 인스턴스의 표시 텍스트를 읽어 JSON으로 옮깁니다. 반환 문자열은 U+2028/2029를 `\n`으로 바꿔야 SSE 오류가 안 납니다. 이미지는 `download_assets(nodeId, png, scale 2)`로 카드 전체를 내보낸 뒤 `Image Slot · Before/After/3/4` 인스턴스의 카드 기준 좌표(×2 + 그림자 여백 16px)로 잘라 `1.png, 2.png…`로 저장합니다(1×1 플레이스홀더 이미지는 `getImageByHash().getSizeAsync()`로 걸러냄).
 
 ---
 
@@ -218,7 +220,8 @@ Figma MCP가 연결돼 있으면: `create_session(fileKey)` → `get_design_cont
 - 질문 답변은 localStorage뿐이라 **팀 전체 공유가 안 됨**. Supabase/Notion API 등 백엔드 연결이 필요 (제안만 됨, 미구현).
 - 「🙋 나도 궁금해요」「👍 도움됐어요」 카운트는 정적 표시(Figma에 투표 기능 정의 없음).
 - 일부 프로세스 카드의 「전체 프롬프트 · Notion ↗」 칩은 Figma에 URL이 없어 비활성.
-- 이미애·이주희 섹션의 Before/After는 Figma에서도 빈 플레이스홀더.
+- 이주희 섹션의 Before/After는 Figma에서도 빈 플레이스홀더(1×1 이미지). 이미애·하소진·이민영 카드 이미지는 2026-11-04에 반영됨.
+- 이미애 카드 3장(실행 아이콘·홈페이지 컨셉·학회 부스)과 QC 카드 STEP 2는 Figma에 프롬프트가 「확인 필요」로 남아 있음.
 - 질문·노하우·인사이트 페이지의 카드를 JSON 데이터로 분리하는 작업.
 - Figma 발표 장표(`TX22qnJGWHuaOKsPiNfepj`, 슬라이드 「07 / SITE · QR」)의 QR 이미지가 배포 주소를 가리키는지 미확인. 다르면 `docs/site-qr.png`로 교체.
 
@@ -233,6 +236,7 @@ Figma MCP가 연결돼 있으면: `create_session(fileKey)` → `get_design_cont
 | 2026-10-28 | 별 파비콘, 프로세스 카드 클릭 → 줄글 복사 팝업, 메인 하단 소개 영상(무음), 이름 「디자인팀 AI 활용 공유보드」, 소개 카드 호버 |
 | 2026-10-29 | 모바일 접속(`--host`) + QR, GitHub Pages 자동 배포, 배포 주소 QR |
 | 2026-10-29 | Figma 장표에 「제작 중 · 내용 확인용 배포」 안내 문구 작성, 이 CLAUDE.md 추가 |
+| 2026-11-04 | Figma 보드 재추출: 이민영 섹션(카드 5장) 신설, 이미애 카드 2장 추가(779:2332 · 779:2493)·1장 삭제(584:1628), 이주희 13장 프롬프트 본문 갱신, 모든 카드 텍스트를 Figma 컴포넌트 속성 기준으로 재동기화(42장). 이미지 슬롯 49개를 2x 내보내기에서 잘라 반영(이미애 12 · 하소진 2 · 이민영 5 · 정현영 6장). 레이더 표 5개(이민영 신설, 이미애 +3행). 추출 데이터·스크립트는 `scripts/figma-extract/`(cards_raw.json · radar_raw.json · build_data.py; 2x 카드 내보내기 PNG를 `exports/`에 두고 `python3 build_data.py <repo>` 실행) |
 
 ---
 

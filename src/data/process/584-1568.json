@@ -6,7 +6,9 @@
   "template": "skill-prompt-guide",
   "title": "클라우드DB백업 실행 아이콘 — 컨셉안 확산 → 상태 4종 베리언트",
   "subtitle": "의사랑 클라우드DB백업 · 신규 · 2026.06 · 아이콘",
-  "aiTags": ["Claude"],
+  "aiTags": [
+    "Claude"
+  ],
   "blocks": [
     {
       "type": "step",
@@ -16,7 +18,9 @@
       "desc": "실행 아이콘 컨셉 후보 생성",
       "promptLabel": "Prompt (입력 원문)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "link": {
+        "label": "전체 프롬프트 · Notion ↗"
+      },
       "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요."
     },
     {
@@ -27,11 +31,21 @@
       "desc": "상태별 아이콘 베리언트 확정",
       "promptLabel": "Prompt (입력 원문)",
       "boxLabel": "PROMPT",
-      "link": { "label": "전체 프롬프트 · Notion ↗" },
+      "link": {
+        "label": "전체 프롬프트 · Notion ↗"
+      },
       "prompt": "확인 필요 — 실제 사용한 프롬프트를 입력하세요.",
       "images": [
-        { "label": "Before — 컨셉 후보", "src": "" },
-        { "label": "After — 실행 아이콘 + 상태 4종", "src": "" }
+        {
+          "label": "컨셉 및 실행 아이콘",
+          "src": "assets/process/584-1568/1.png",
+          "alt": "컨셉 및 실행 아이콘"
+        },
+        {
+          "label": "상태값 4종",
+          "src": "assets/process/584-1568/2.png",
+          "alt": "상태값 4종"
+        }
       ]
     },
     {

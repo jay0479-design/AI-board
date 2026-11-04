@@ -1,0 +1,328 @@
+{
+  "nodeId": "778:2537",
+  "author": "이민영",
+  "title": "프로젝트별 AI 스택 레이더",
+  "subtitle": "각 프로젝트가 어떤 AI 스택으로 배포까지 진행되는지 한눈에 보는 현황판 프로젝트별 어떻게 어떤 AI를 사용하는지 공유해요",
+  "columns": [
+    "연도",
+    "월",
+    "담당자",
+    "프로젝트명",
+    "현재 단계",
+    "활용 중인 AI 스킬"
+  ],
+  "rows": [
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "3월"
+        },
+        {
+          "text": "이민영"
+        },
+        {
+          "text": "[사내의원] 진료·접수 고도화 (개선 21건)"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "3월"
+        },
+        {
+          "text": "이민영"
+        },
+        {
+          "text": "[공통] Figma 화면 → 프로토타입 코드 추출"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "3~6월"
+        },
+        {
+          "text": "이민영"
+        },
+        {
+          "text": "[MediAI DS v1] 디자인시스템 · 팀 표준 전환"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            },
+            {
+              "label": "Gemini",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "6월"
+        },
+        {
+          "text": "이민영"
+        },
+        {
+          "text": "[차세대 서식] 리서치·경쟁사 분석·컨셉덱"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "7월"
+        },
+        {
+          "text": "이민영"
+        },
+        {
+          "text": "[차세대 서식] 요구사항·기능 정의서 36건"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "7월"
+        },
+        {
+          "text": "이민영"
+        },
+        {
+          "text": "[차세대 서식] 프로토타입 3화면"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "7월"
+        },
+        {
+          "text": "이민영"
+        },
+        {
+          "text": "[차세대 서식] Jira 스토리 60건 등록"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "7~8월"
+        },
+        {
+          "text": "이민영"
+        },
+        {
+          "text": "[차세대 서식] 서식 정본 29종 인쇄용 제작"
+        },
+        {
+          "tags": [
+            {
+              "label": "실무적용",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "9월"
+        },
+        {
+          "text": "이민영"
+        },
+        {
+          "text": "[차세대 EMR] 의사랑 DS 진료·접수 디자인"
+        },
+        {
+          "tags": [
+            {
+              "label": "진행중",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "Figma MCP",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

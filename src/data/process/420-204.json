@@ -5,8 +5,13 @@
   "template": "skill-prompt-guide",
   "title": "UBIST 종별 조정 팝업 · 내용 반영 (운영 활용 예시)",
   "subtitle": "엑셀 안내문 분석 → 기존 Figma 팝업 디자인을 유지한 채 문구·표만 교체 (3종)",
-  "aiTags": ["Claude", "Figma MCP"],
-  "docTags": ["📎 Excel"],
+  "aiTags": [
+    "Claude",
+    "Figma MCP"
+  ],
+  "docTags": [
+    "📎 Excel"
+  ],
   "blocks": [
     {
       "type": "step",
@@ -28,8 +33,16 @@
       "boxLabel": "PROMPT",
       "prompt": "디자인·폰트는 유지하고 엑셀 내용만 반영해 팝업 3종 제작을 진행하세요",
       "images": [
-        { "label": "Before · 기존 (유비케어 · 25년 10월)", "src": "/assets/process/420-204/1.png", "alt": "기존 유비케어 의약품 통계 정보 서비스 종별 조정 안내 팝업 3종" },
-        { "label": "After · 수정본 (GC메디아이 · 26년 9월)", "src": "/assets/process/420-204/2.png", "alt": "GC메디아이 수정본 종별 조정 안내 팝업 3종" }
+        {
+          "label": "Before · 기존 (유비케어 · 25년 10월)",
+          "src": "assets/process/420-204/1.png",
+          "alt": "Before · 기존 (유비케어 · 25년 10월)"
+        },
+        {
+          "label": "After · 수정본 (GC메디아이 · 26년 9월)",
+          "src": "assets/process/420-204/2.png",
+          "alt": "After · 수정본 (GC메디아이 · 26년 9월)"
+        }
       ]
     },
     {

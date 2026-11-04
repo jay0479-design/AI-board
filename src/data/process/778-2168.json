@@ -1,0 +1,60 @@
+{
+  "nodeId": "778:2168",
+  "author": "이민영",
+  "order": 4,
+  "template": "skill-prompt-guide",
+  "title": "MediAI DS v1 · Figma와 일대일 대조·토큰 정리 → 디자인팀 표준",
+  "subtitle": "토큰 초안부터 컴포넌트 55종, 스토리북 대조, 토큰 연결 정리까지 (2026.03~06 · Claude Code·Figma MCP)",
+  "aiTags": [
+    "Claude Code",
+    "Figma MCP",
+    "Gemini"
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "스토리북으로 Figma와 일대일 대조",
+      "desc": "컴포넌트 링크를 하나씩 주고 비교",
+      "promptLabel": "대조 프롬프트 (실제 원문 · 정리)",
+      "boxLabel": "PROMPT",
+      "prompt": "지금 웹 DS 말고 스토리북으로 개발자에게 공유할 수 있게 만들어 줘. 대신 Figma와 완벽하게 일대일로 똑같아야 해. [Figma 링크] 컴포넌트를 하나씩 줄 테니 추측하지 말고 Figma를 직접 열어서 비교하고 맞춰 줘."
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "어긋난 토큰 연결 정리",
+      "desc": "값이 직접 들어간 곳·끊긴 연결을 찾아 토큰으로 되돌림",
+      "promptLabel": "토큰 정리 프롬프트 (실제 원문 · 정리)",
+      "boxLabel": "PROMPT",
+      "prompt": "[Figma 토큰 링크] 토큰에 여백이나 숫자가 값으로 직접 들어간 곳을 찾아 줘. 색을 맞추다가 토큰 연결이 끊긴 것 같으니 그것도 다시 연결해 줘. 토큰마다 설명을 써 둬야 하는지도 알려 줘.",
+      "images": [
+        {
+          "label": "Figma 원본 · 아코디언 컴포넌트",
+          "src": "assets/process/778-2168/1.png",
+          "alt": "Figma 원본 · 아코디언 컴포넌트"
+        },
+        {
+          "label": "토큰 표 · 모달 시맨틱 토큰",
+          "src": "assets/process/778-2168/2.png",
+          "alt": "토큰 표 · 모달 시맨틱 토큰"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 컴포넌트 55종, 설명 문서 44개. 디자인팀 표준이 돼 클라우드DB백업 등 다른 제품에서 쓰는 중.\n팁: 처음에 Figma와 일대일로 맞춘다고 못 박고, 맞다고 하면 Figma를 직접 열어 화면으로 비교하게 하세요. 같은 지적이 두 번 나오면 스킬로 묶어 두면 다음 컴포넌트부터는 반복하지 않아요."
+        }
+      ]
+    }
+  ]
+}
