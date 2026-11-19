@@ -715,6 +715,46 @@
           ]
         }
       ]
+    },
+    {
+      "cells": [
+        {
+          "text": "2026"
+        },
+        {
+          "text": "11월"
+        },
+        {
+          "text": "정현영"
+        },
+        {
+          "text": "[의사랑 기능가이드] 썸네일 생성기"
+        },
+        {
+          "tags": [
+            {
+              "label": "배포완료",
+              "kind": "status"
+            }
+          ]
+        },
+        {
+          "tags": [
+            {
+              "label": "Claude",
+              "kind": "ai"
+            },
+            {
+              "label": "Claude Code",
+              "kind": "ai"
+            },
+            {
+              "label": "ChatGPT",
+              "kind": "ai"
+            }
+          ]
+        }
+      ]
     }
   ]
 }
