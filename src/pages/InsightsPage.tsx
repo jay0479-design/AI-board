@@ -47,7 +47,7 @@ function InsightSnapCard({ title, date, oneLiner, media }: { title: string; date
       <div className="w-full overflow-hidden rounded-[20px] bg-surface-divider" style={{ aspectRatio: '685/385' }}>
         {media}
       </div>
-      <p className="t-body text-text-secondary">{oneLiner}</p>
+      <p className="t-body pre-wrap text-text-secondary">{oneLiner}</p>
     </div>
   );
 }
@@ -260,6 +260,39 @@ export default function InsightsPage() {
                   title="사용 가이드"
                   desc="작업중인 클로드 코드에 한번 등록해놓으면 자연어로 명령해도 모두 적용이 됩니다."
                   code={'[피그마 링크(node-id 포함)]\n해당 가이드를 분석하여 전문 BX 디자이너 관점으로 장표 내용을 보충 작성합니다.\n/im_not_ai 스킬을 사용하여 윤문을 다듬어주세요.'}
+                />
+              </div>
+            </div>
+          </Board>
+        </div>
+
+        {/* 인사이트 모음2 (944:116) · 2026-11-16 — 실전 적용 사례는 Figma에서 빈 템플릿 상태라 숨김 */}
+        <div className="card max-w-[877px] overflow-hidden rounded-[16px] p-0">
+          <Board>
+            <div className="flex flex-col gap-5">
+              <h2 className="t-h1 text-[#14141f]">AI 인사이트</h2>
+              <ResearchCard
+                author="정현영"
+                date="2026.11.16"
+                avatar={asset('assets/insights/avatar-jhy.svg')}
+                topic="우리은행 키오스크 음성 스마트 AI 탑재 기술"
+                body={
+                  "100여 개 메뉴를 직접 찾던 스마트키오스크에 'AI 내비게이터'를 넣어, 일상적인 말로 업무를 설명하면 AI가 발화 의도를 분석해 해당 거래 화면으로 바로 안내합니다.\n증명서 발급, 통장·보안매체 분실 신고 등 일부 업무는 검색부터 처리까지 음성으로 진행하고, 직원 도움이 필요하면 화상상담으로 연결됩니다.\n메뉴 탐색을 대화로 바꾼 혁신 사례입니다. 음성 기술은 셀바스AI, 의도 분석은 LG CNS가 맡았습니다."
+                }
+                links={[{ label: 'PPSS · 우리은행, 스마트키오스크에 AI 음성인식 도입', url: 'https://www.ppss.kr/news/articleView.html?idxno=320130' }]}
+              />
+            </div>
+
+            <div className="flex flex-col gap-5">
+              <h3 className="t-h2">신규 AI 사용 리서치</h3>
+              <div className="rounded-[12px] bg-surface-group p-4 sm:p-5">
+                <InsightSnapCard
+                  title="우리은행 스마트키오스크 AI 음성인식"
+                  date="2026.11.16"
+                  oneLiner={
+                    '메뉴를 찾는 대신 말하면 화면이 따라오는 키오스크. 탐색 UX를 대화로 바꾼 인사이트.\n키오스크 사용이 어려운 연령층, 고객들에게 친화적인 방법\n우리은행 AX팀 기준, 고객 입장에서 완전히 새로운 방법이 아닌 익숙한 방법으로 다가가 최상의 UX로 구현한 인사이트'
+                  }
+                  media={<img src={asset('assets/insights/woori-kiosk.png')} alt="우리금융그룹 AI 키오스크 실물과 '말로 업무 찾고, 거래까지!' 홍보 이미지" className="size-full object-cover" />}
                 />
               </div>
             </div>

@@ -1,6 +1,6 @@
 import type { ProcessCard, ProcessSection } from '../types';
 
-/* All card JSON files extracted from Figma page "📍 1. AI 프로세스 공유" (재추출 2026-11-04 · 42장) */
+/* All card JSON files extracted from Figma page "📍 1. AI 프로세스 공유" (재추출 2026-11-04 · 2026-11-19 기준 43장) */
 const cardModules = import.meta.glob<{ default: ProcessCard }>('./*-*.json', { eager: true });
 const indexModules = import.meta.glob<{ default: unknown }>('./index.*.json', { eager: true });
 
@@ -20,7 +20,7 @@ function indexFor(author: string): IndexShape | undefined {
 const SECTION_ORDER: { author: string; fallbackTitle: string }[] = [
   { author: '정현영', fallbackTitle: '정현영' },
   { author: '이주희', fallbackTitle: '이주희_작업중 ✏️' },
-  { author: '이미애', fallbackTitle: '이미애___작업중입니다 🚀🚀' },
+  { author: '이미애', fallbackTitle: '이미애' },
   { author: '하소진', fallbackTitle: '하소진 - 작업중🚧' },
   { author: '이민영', fallbackTitle: '이민영' },
 ];

@@ -1,0 +1,63 @@
+{
+  "nodeId": "984:2529",
+  "author": "정현영",
+  "order": 10,
+  "template": "skill-prompt-guide",
+  "title": "의사랑 기능가이드 썸네일 생성기",
+  "subtitle": "GitBook 기능 가이드 카드 썸네일을 같은 규칙으로 만드는 HTML 생성기",
+  "aiTags": [
+    "Claude",
+    "Figma MCP",
+    "ChatGPT"
+  ],
+  "blocks": [
+    {
+      "type": "step",
+      "badge": "STEP 1",
+      "badgeTone": "blue",
+      "name": "MCP 분석 · 기준 수립",
+      "desc": "클립아트코리아 MCP로 가능한 범위를 먼저 확인하고 썸네일 기준을 잡았습니다",
+      "promptLabel": "MCP Analysis Prompt",
+      "boxLabel": "PROMPT",
+      "link": {
+        "label": "전체 프롬프트 · Notion ↗",
+        "url": "https://app.notion.com/p/41dece7d311580009492e2fd320e1c57"
+      },
+      "prompt": "연결된 클립아트 MCP로 의사랑 GitBook 기능 가이드 썸네일 자동 생성기를 만들려 합니다.\n디자인을 만들지 말고 먼저 MCP 기능을 분석해 주세요.\n- 도구 목록·입출력, 실제 가능한 기능과 미지원 기능 구분\n- 의료·소프트 3D 클레이 에셋 검색 가능 여부, 자동 생성 가능 범위 검토\n- 미지원 기능은 지원한다고 가정하지 말고 별도 구현 방법 제안"
+    },
+    {
+      "type": "step",
+      "badge": "STEP 2",
+      "badgeTone": "blue",
+      "name": "생성기 구현 · 고도화",
+      "desc": "기획팀 요청을 바탕으로 생성기를 만들고 규칙·에셋·UI를 다듬었습니다",
+      "promptLabel": "Build Prompt",
+      "boxLabel": "PROMPT",
+      "link": {
+        "label": "전체 프롬프트 · Notion ↗",
+        "url": "https://app.notion.com/p/41dece7d311580009492e2fd320e1c57"
+      },
+      "prompt": "https://ysr-3.gitbook.io/ysr-docs/guide/feature 기능 가이드 페이지를 분석하고\n기획팀 요청(카드가 글자만 있어 구분이 어렵고, 신규 가이드가 구분되지 않음)에 맞춰\n썸네일 디자인 기준을 잡고 Claude 프롬프트 형태로 정리해 주세요.\nClaude Design보다 더 좋은 방식이 있다면 제안해도 됩니다.\n해당 요청에 맞는 구현이 필요합니다.",
+      "images": [
+        {
+          "label": "After",
+          "src": "assets/process/984-2529/1.png",
+          "alt": "의사랑 기능 가이드 썸네일 생성기 화면"
+        }
+      ]
+    },
+    {
+      "type": "section",
+      "badge": "TIP",
+      "badgeTone": "orange",
+      "name": "Tips & Result",
+      "desc": "결과 및 실무 팁",
+      "boxes": [
+        {
+          "tone": "subtle",
+          "text": "결과: 제목만 넣으면 1600×900 썸네일을 같은 규칙으로 만드는 HTML 생성기를 완성하여\n디자인팀 GitHub Pages에 배포했습니다. (https://gcmediai-design.github.io/usr-thumbnail-generator/)\n실무 팁: 클립아트 MCP는 검색만 되므로 에셋은 라이선스를 확인한 원본을 직접 등록하고, \nAI에는 그리기 대신 분류·오브젝트 선택만 맡기면 결과가 일정합니다.\nGPT를 통한 이미지 작업의 균일화를 진행한 사례입니다."
+        }
+      ]
+    }
+  ]
+}

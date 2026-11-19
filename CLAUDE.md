@@ -71,7 +71,7 @@ src/
   pages/
     HomePage.tsx           # 소개 카드(호버 효과) · 페이지 목록 링크 · 팀 일러스트 · 하단 소개 영상(무음 자동재생)
     ProcessPage.tsx        # 가이드 섹션 + 작성자 섹션 5개(스크롤 스파이 앵커 바) + CardTextModal
-    InsightsPage.tsx       # 가이드(채우기/트렌드 분석 프롬프트 토글) + 정현영 인사이트 보드
+    InsightsPage.tsx       # 가이드(채우기/트렌드 분석 프롬프트 토글) + 정현영 인사이트 보드 2개(195:1285 · 944:116)
     KnowhowPage.tsx        # Showcase 그라데이션 + Pro-Tip 카드
     QuestionsPage.tsx      # 가이드 + 질문 카드 2장 + 답변 작성 폼(AnswerForm)
     RadarPage.tsx          # 작성자 탭 5개 + 표(min-w 1100)
@@ -80,7 +80,7 @@ src/
     process/
       index.ts             # import.meta.glob으로 *-*.json 카드 자동 수집, SECTION_ORDER(정현영→이주희→이미애→하소진→이민영)
       index.<작성자>.json   # 작성자별 카드 순서 (배열 또는 {sectionTitle, groups:[{label, files}]})
-      <nodeId>.json        # 카드 1장 = 파일 1개 (Figma 노드 ID, 예: 446-1214.json) — 총 42장 (2026-11-04 재추출)
+      <nodeId>.json        # 카드 1장 = 파일 1개 (Figma 노드 ID, 예: 446-1214.json) — 총 43장 (2026-11-19 기준)
     radar/
       index.json           # 작성자 탭 순서
       <작성자>.json         # 레이더 표 1개

@@ -37,7 +37,7 @@ node -e "require('qrcode').toFile('docs/mobile-qr.png','http://<PC IP>:5173/',{w
 | 라우트 | Figma 페이지 | 구현 내용 |
 |---|---|---|
 | `/` | 👋 0. 보드 소개 | 보드 소개 카드, 페이지 목록(각 페이지로 링크), 팀 일러스트 (커버·설명 콜아웃은 요청으로 제외) |
-| `/process` | 📍 1. AI 프로세스 공유 | 가이드 섹션(카드 만들기 안내, 템플릿 카드, 설명 2종, Claude Code 프롬프트) + 작성자 섹션 5개(정현영 9 · 이주희 13 · 이미애 12(그룹 4개) · 하소진 3 · 이민영 5 = 42장) |
+| `/process` | 📍 1. AI 프로세스 공유 | 가이드 섹션(카드 만들기 안내, 템플릿 카드, 설명 2종, Claude Code 프롬프트) + 작성자 섹션 5개(정현영 10 · 이주희 13 · 이미애 12(그룹 4개) · 하소진 3 · 이민영 5 = 43장) |
 | `/insights` | 📍 2. AI 인사이트 리서치 | 템플릿 보드 + 설명 + 채우기 프롬프트, 트렌드 분석 프롬프트(아코디언), 정현영 인사이트 모음 |
 | `/knowhow` | 📍 3. 우리팀 실무 노하우 | The Showcase(그라데이션 + Blob) · Pro-Tip 카드 2장 · Add Yours CTA |
 | `/questions` | 📍 4. AI 질문 창구 | 질문 카드 만들기 가이드, 템플릿 질문 카드, 설명 2종, 정현영 질문 카드 2장 |
@@ -60,7 +60,7 @@ src/
   pages/               # Home · Process · Insights · Knowhow · Questions · Radar · NotFound
   data/
     types.ts           # ProcessCard / RadarTable 타입
-    process/*.json     # 카드 42장 (Figma에서 추출, nodeId 기준 파일명) + index.<작성자>.json
+    process/*.json     # 카드 43장 (Figma에서 추출, nodeId 기준 파일명) + index.<작성자>.json
     radar/*.json       # 작성자별 레이더 표
 public/assets/         # Figma 원본 에셋(이미지·SVG) + QA용 _figma.png 스크린샷
 ```
